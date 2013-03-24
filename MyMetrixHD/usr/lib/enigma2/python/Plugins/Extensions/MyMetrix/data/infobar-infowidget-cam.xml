@@ -2,5 +2,15 @@
   <widget source="session.CurrentService" render="Label" position="389,40" size="279,41" font="SetrixHD; 23" valign="center" backgroundColor="metrixBackground" transparent="1" halign="left">
     <convert type="ServiceName">Provider</convert>
   </widget>
-  <eLabel name="new ePixmap" position="380,40" size="520,70" backgroundColor="metrixBackground" transparent="0" zPosition="-99" />
+  
+  <widget source="session.CurrentService" render="Label" position="630,49" size="240,30" zPosition="3" font="Regular;17" backgroundColor="metrixBackground" halign="right" foregroundColor="metrixForeground" transparent="1">
+      <convert type="pliCamd">Camd</convert>
+    </widget>
+  
+  <widget source="session.CurrentService" render="Label" font="Regular; 15" position="388,73" size="500,35" halign="left" zPosition="50" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1" noWrap="1" valign="center">
+	<convert type="pliCaidDisplay">Default</convert>
+  </widget>   
+     
+  <eLabel name="new ePixmap" position="380,40" size="500,70" backgroundColor="metrixBackground" transparent="0" zPosition="-99" />
+ 
 <!-- InfoWidget Provider and CAM(CENTER) */ -->

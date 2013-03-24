@@ -1,5 +1,5 @@
 <!--/* CHANNEL NAME -->
-<widget source="session.CurrentService" render="Label" position="275,407" size="1152,306" font="SetrixHD; 140" halign="left" valign="top" noWrap="1" backgroundColor="metrixPreTrans2" transparent="1" foregroundColor="metrixPreTrans2" zPosition="-30">
+<widget source="session.CurrentService" render="Label" position="35,405" size="1252,306" font="SetrixHD; 140" halign="left" valign="top" noWrap="1" backgroundColor="metrixPreTrans2" transparent="1" foregroundColor="metrixPreTrans2" zPosition="-30">
   <convert type="ServiceName">Name</convert>
 </widget>
 <!-- CHANNEL NAME */-->

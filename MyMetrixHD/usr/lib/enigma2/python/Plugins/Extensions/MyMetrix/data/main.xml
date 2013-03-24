@@ -1564,9 +1564,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="chBouq" position="180,100" size="265,50" halign="left" font="SetrixHD;35" noWrap="1" transparent="1" />
     <eLabel position="444,1" size="1,163" backgroundColor="grey" />
   </screen>
-  <screen name="NumberZap" position="center,center" size="250,60" title="QuickZap" flags="wfNoBorder" backgroundColor="metrixBackground">
-    <widget name="channel" position="25,0" size="100,60" font="SetrixHD;40" backgroundColor="metrixBackground" />
-    <widget name="number" position="125,0" size="100,60" halign="right" font="SetrixHD;40" backgroundColor="metrixBackground" />
+  <screen name="NumberZap" position="center,center" size="275,60" title="QuickZap" flags="wfNoBorder" backgroundColor="metrixBackground">
+    <widget name="channel" position="25,0" size="125,60" font="SetrixHD;40" backgroundColor="metrixBackground" />
+    <widget name="number" position="150,0" size="100,60" halign="right" font="SetrixHD;40" backgroundColor="metrixBackground" />
   </screen>
   <screen name="NumberZapWithName" position="200,21" size="1050,830" title="QuickZap" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="servicenumber" position="323,283" size="387,172" font="SetrixHD; 150" halign="right" backgroundColor="metrixBackground" transparent="1" valign="center" foregroundColor="metrixAccent2" zPosition="-1" />
