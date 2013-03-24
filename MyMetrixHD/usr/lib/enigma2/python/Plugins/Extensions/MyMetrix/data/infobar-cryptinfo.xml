@@ -1,0 +1,5 @@
+ <!-- /* Crypt-Info -->
+    <widget source="session.CurrentService" render="Label" position="285,666" size="215,33" backgroundColor="metrixBackground" foregroundColor="metrixAccent2" font="Regular; 19" halign="center" valign="center" zPosition="5" transparent="0">
+      <convert type="MetrixExtraInfo">CryptoBar</convert>
+    </widget>
+ <!-- Crypt-Info */ -->

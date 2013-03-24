@@ -1,0 +1,129 @@
+<skin>
+  <!-- MetrixHD v1.1b (Rev.9A58C3632A) by iMaxxx --> 
+  <!-- Mod by IPMAN -->
+  <!-- recommended to use only with XPicons (transparent light) -->
+  <!-- You can modify and redistribute it as long as you keep this License and the original author for the skin and all of your modifications -->
+  <output id="0">
+    <resolution xres="1280" yres="720" bpp="32" />
+  </output>
+  <colors>
+    <color name="background" value="#40000000" />
+    <color name="black" value="#00000000" />
+    <color name="blue" value="#000064c7" />
+    <color name="dark" value="#00294a6b" />
+    <color name="darkgrey" value="#00999999" />
+    <color name="foreground" value="#00ffffff" />
+    <color name="grey" value="#00bbbbbb" />
+    <color name="metrixPreBlack2" value="#40000000" />
+    <color name="green" value="#00389416" />
+    <color name="metrixAccent1" value="#00bbbbbb" />
+    <color name="metrixAccent2" value="#00999999" />
+    <color name="metrixBackground" value="#40000000" />
+    <color name="metrixBackground2" value="#40111111" />
+    <color name="metrixBlue" value="#001677d2" />
+    <color name="metrixCyan" value="#00149baf" />
+    <color name="metrixDeepGrey" value="#00222222" />
+    <color name="metrixForeground" value="#00ffffff" />
+    <color name="metrixGreen" value="#0070ad11" />
+    <color name="metrixOrange" value="#00c3461b" />
+    <color name="metrixPink" value="#00a61d4d" />
+    <color name="metrixPreTrans" value="#ccffffff" />
+    <color name="metrixPreTrans2" value="#dfffffff" />
+    <color name="metrixPurple" value="#006c0aab" />
+    <color name="metrixRed" value="#00911d10" />
+    <color name="metrixSelection" value="#00149bae" />
+    <color name="metrixYellow" value="#00bf9217" />
+    <color name="orange" value="#00f47d19" />
+    <color name="rds_text_bg" value="#00003258" />
+    <color name="red" value="#00f23d21" />
+    <color name="rssviewtop" value="#45005050" />
+    <color name="transparent" value="#ff111111" />
+    <color name="transpBlack" value="#80000000" />
+    <color name="transpWhite" value="#77ffffff" />
+    <color name="transpyellow" value="#33bab329" />
+    <color name="un18080911" value="#18080911" />
+    <color name="un1c202b" value="#001c202b" />
+    <color name="un1f771f" value="#001f771f" />
+    <color name="un240e1014" value="#240e1014" />
+    <color name="un44000000" value="#44000000" />
+    <color name="un444444" value="#00444444" />
+    <color name="un555555" value="#00555555" />
+    <color name="un5678a4" value="#005678a4" />
+    <color name="un56c856" value="#0056c856" />
+    <color name="un666666" value="#00666666" />
+    <color name="un800000" value="#00800000" />
+    <color name="un808888" value="#00808888" />
+    <color name="un9f1313" value="#009f1313" />
+    <color name="unbab329" value="#00bab329" />
+    <color name="und3d3d3" value="#00d3d3d3" />
+    <color name="undcaaaa" value="#00dcaaaa" />
+    <color name="undcdcdc" value="#00dcdcdc" />
+    <color name="unececec" value="#00ececec" />
+    <color name="unf0b400" value="#00f0b400" />
+    <color name="unfcc000" value="#00fcc000" />
+    <color name="unff" value="#000000ff" />
+    <color name="unff00" value="#0000ff00" />
+    <color name="unff0000" value="#00ff0000" />
+    <color name="unff000000" value="#ff000000" />
+    <color name="unff4a3c" value="#00ff4a3c" />
+    <color name="unffff00" value="#00ffff00" />
+    <color name="unffffff" value="#00ffffff" />
+    <color name="white" value="#00ffffff" />
+    <color name="yellow" value="#00e5b243" />
+  </colors>
+  <fonts>
+    <font filename="lcd.ttf" name="LCD" scale="100" />
+    <font filename="ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
+    <font filename="tuxtxt.ttf" name="Console" scale="100" />
+    <font filename="nmsbd.ttf" name="Arial" scale="100" />
+    <font filename="/usr/share/enigma2/MetrixHD/fonts/digi.ttf" name="DIGI" scale="100" />
+    <font filename="/usr/share/enigma2/MetrixHD/fonts/OpenSans-Regular.ttf" name="Regular" scale="100" />
+    <font filename="/usr/share/enigma2/MetrixHD/fonts/OpenSans-Regular.ttf" name="RegularLight" scale="100" />
+    <font filename="/usr/share/enigma2/MetrixHD/fonts/setrixHD.ttf" name="SetrixHD" scale="100" />
+    <font filename="/usr/share/enigma2/MetrixHD/fonts/meteocons.ttf" name="Meteo" scale="100" />
+  </fonts>
+  <subtitles>
+    <sub name="Subtitle_TTX" font="Regular;30" shadowColor="#40101010" shadowOffset="3,3" />
+    <sub name="Subtitle_Regular" font="Regular;30" foregroundColor="undcdcdc" shadowColor="#40101010" shadowOffset="3,3" />
+    <sub name="Subtitle_Bold" font="Replacement;30" foregroundColor="undcdcdc" shadowColor="#40101010" shadowOffset="3,3" />
+    <sub name="Subtitle_Italic" font="Regular;30" foregroundColor="undcaaaa" shadowColor="#40101010" shadowOffset="3,3" />
+  </subtitles>
+  <windowstyle type="skinned" id="0">
+    <title offset="30,28" font="SetrixHD;26" />
+    <color name="Background" color="metrixBackground" />
+    <color name="LabelForeground" color="metrixForeground" />
+    <color name="ListboxBackground" color="metrixBackground" />
+    <color name="ListboxForeground" color="metrixForeground" />
+    <color name="ListboxSelectedBackground" color="metrixSelection" />
+    <color name="ListboxSelectedForeground" color="metrixForeground" />
+    <color name="ListboxMarkedBackground" color="metrixGreen" />
+    <color name="ListboxMarkedForeground" color="metrixForeground" />
+    <color name="ListboxMarkedAndSelectedBackground" color="metrixBlue" />
+    <color name="ListboxMarkedAndSelectedForeground" color="metrixForeground" />
+    <color name="WindowTitleForeground" color="metrixForeground" />
+    <color name="WindowTitleBackground" color="metrixBackground" />
+    <borderset name="bsWindow">
+      <pixmap pos="bpTopLeft" filename="MetrixHD/bs_tl.png" />
+      <pixmap pos="bpTop" filename="MetrixHD/bs_t.png" />
+      <pixmap pos="bpTopRight" filename="MetrixHD/bs_tr.png" />
+      <pixmap pos="bpLeft" filename="MetrixHD/bs_l.png" />
+      <pixmap pos="bpRight" filename="MetrixHD/bs_r.png" />
+      <pixmap pos="bpBottomLeft" filename="MetrixHD/bs_bl.png" />
+      <pixmap pos="bpBottom" filename="MetrixHD/bs_b.png" />
+      <pixmap pos="bpBottomRight" filename="MetrixHD/bs_br.png" />
+    </borderset>
+  </windowstyle>
+  <windowstyle type="skinned" id="1">
+    <color name="Background" color="transpBlack" />
+    <color name="LabelForeground" color="metrixForeground" />
+    <color name="ListboxBackground" color="metrixForeground" />
+    <color name="ListboxForeground" color="metrixForeground" />
+    <color name="ListboxSelectedBackground" color="metrixSelection" />
+    <color name="ListboxSelectedForeground" color="metrixForeground" />
+    <color name="ListboxMarkedBackground" color="metrixBlue" />
+    <color name="ListboxMarkedForeground" color="metrixForeground" />
+    <color name="ListboxMarkedAndSelectedBackground" color="metrixBlue" />
+    <color name="ListboxMarkedAndSelectedForeground" color="metrixForeground" />
+    <color name="WindowTitleForeground" color="metrixForeground" />
+    <color name="WindowTitleBackground" color="metrixBackground" />
+  </windowstyle>

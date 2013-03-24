@@ -1,0 +1,11 @@
+<!--/* MetrixUpdater -->
+    <widget render="MetrixUpdater" source="global.CurrentTime" position="40,570" size="220,132" zPosition="10" backgroundColor="metrixBackground">
+    </widget>
+<!--MetrixUpdater */-->
+<!--/* MetrixUpdaterInfo -->
+    <widget source="global.CurrentTime"  pixmap="MetrixHD/icons/update.png" position="40,570" size="220,132" zPosition="10" alphatest="blend" backgroundColor="metrixBackground" render="Pixmap" transparent="0">
+      <convert type="MetrixUpdateCheck" />
+      <convert type="ConditionalShowHide" />
+    </widget>
+<!--MetrixUpdaterInfo */-->
+

@@ -1,0 +1,39 @@
+<!-- /* STYLE CLASSIC -->
+    <widget source="session.CurrentService" render="XPicon" position="39,570" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="1091,563" size="75,30" font="Regular; 19" halign="right" backgroundColor="metrixBackground2" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel text="-" position="1169,563" size="15,30" font="Regular; 19" halign="center" backgroundColor="metrixBackground" transparent="1" />
+    <widget source="session.Event_Now" render="Label" position="1177,563" size="60,30" font="Regular; 19" halign="right" backgroundColor="metrixBackground2" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="286,558" size="820,56" font="SetrixHD; 40" halign="left" backgroundColor="metrixBackground2" transparent="1" noWrap="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="1125,586" size="113,30" font="Regular; 19" halign="right" backgroundColor="metrixBackground2" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="271,624" size="75,43" font="Regular; 24" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1" noWrap="1" valign="top">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel text="-" position="351,624" size="15,42" font="Regular; 24" halign="center" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1" noWrap="1" valign="top" />
+    <widget source="session.Event_Next" render="Label" position="371,624" size="75,40" font="Regular; 24" halign="left" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1" noWrap="1" valign="top">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="441,624" size="820,40" font="Regular; 24" halign="left" backgroundColor="metrixBackground" transparent="1" foregroundColor="metrixAccent1" valign="top">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="1124,624" size="113,30" font="Regular; 18" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
+    </widget>
+    <eLabel name="new eLabel" position="288,620" size="950,1" backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" />
+    <eLabel position="288,620" size="950,1" backgroundColor="metrixAccent1" />
+<!-- STYLE CLASSIC */ -->

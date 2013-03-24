@@ -1,0 +1,6 @@
+<!-- /* InfoWidget Provider-Only (CENTER)-->
+  <widget source="session.CurrentService" render="Label" position="460,45" size="334,56" font="SetrixHD; 40" valign="center" backgroundColor="metrixBackground" transparent="1" halign="center">
+    <convert type="ServiceName">Provider</convert>
+  </widget>
+  <eLabel name="new ePixmap" position="447,40" size="360,70" backgroundColor="metrixBackground" transparent="0" zPosition="-99" />
+<!-- InfoWidget Provider-Only (CENTER) */ -->

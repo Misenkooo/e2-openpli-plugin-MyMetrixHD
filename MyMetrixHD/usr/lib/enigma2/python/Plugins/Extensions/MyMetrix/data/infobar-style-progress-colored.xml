@@ -1,0 +1,5 @@
+<!-- /* Infobar Progress Colored -->
+  <widget source="session.Event_Now" render="Progress" foregroundColor="metrixSelection" backgroundColor="metrixBackground" position="288,613" size="950,5" zPosition="7" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+<!-- / Infobar Progress Colored *-->  

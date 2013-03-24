@@ -1,0 +1,159 @@
+<!--* iDreamMerlin & MerlinMusicPlayer New -->
+<screen name="iDreamMerlin" position="0,0" size="1280,720" title="iDream" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap position="40,25" zPosition="-10" size="1205,650" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
+    <eLabel position="802,222" size="424,240" zPosition="2" backgroundColor="metrixForeground" />
+    <ePixmap position="802,222" size="426,426" zPosition="3" pixmap="MetrixHD/mmp/new/wallpaper-fs8.png" />
+    <widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="metrixBackground2" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" backgroundColor="metrixBackground2" transparent="1" foregroundColor="metrixAccent1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,64" size="161,29" font="Regular; 16" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget source="Title" render="Label" position="70,47" size="800,53" font="SetrixHD;35" backgroundColor="metrixBackground2" transparent="1" />
+    <widget name="headertext" position="70,115" size="700,38" font="SetrixHD;23" backgroundColor="metrixBackground" transparent="1" />
+    <eLabel position="70,155" size="700,2" backgroundColor="metrixAccent1" />
+    <widget name="list" position="70,165" size="700,450" zPosition="3" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="metrixBackground" transparent="1" />
+    <ePixmap pixmap="MetrixHD/buttons/red.png" position=" 70,635" size="30,40" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/green.png" position="360,635" size="30,40" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/yellow.png" position="650,635" size="30,40" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/blue.png" position="940,635" size="30,40" alphatest="blend" />
+    <widget source="key_red" render="Label" position="105,637" size="240,24" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget source="key_green" render="Label" position="395,637" size="240,24" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget source="key_yellow" render="Label" position="685,637" size="240,24" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget source="key_blue" render="Label" position="975,637" size="240,24" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
+</screen>
+<screen name="iDreamAddToDatabase" position="0,0" size="1280,720" title="Add music files to iDream database" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap position="40,25" zPosition="-10" size="1205,650" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
+    <eLabel position="802,222" size="424,240" zPosition="2" backgroundColor="metrixForeground" />
+    <ePixmap position="802,222" size="426,426" zPosition="3" pixmap="MetrixHD/mmp/new/wallpaper-fs8.png" />
+    <widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="metrixBackground2" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" backgroundColor="metrixBackground2" transparent="1" foregroundColor="metrixAccent1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,64" size="161,29" font="Regular; 16" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget source="Title" render="Label" position="70,47" size="800,53" font="SetrixHD;35" backgroundColor="metrixBackground2" transparent="1" />
+    <widget name="output" position="70,140" size="700,450" font="SetrixHD;22" backgroundColor="metrixBackground" transparent="1" />
+    <ePixmap pixmap="MetrixHD/buttons/red.png" position=" 70,635" size="30,40" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/green.png" position="360,635" size="30,40" alphatest="blend" />
+    <widget source="key_red" render="Label" position="105,637" size="240,24" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget source="key_green" render="Label" position="395,637" size="240,24" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
+</screen>
+<screen name="MerlinMusicPlayerScreen" position="0,0" flags="wfNoBorder" size="1280,720" title="Merlin Music Player">
+	<ePixmap pixmap="MetrixHD/mmp/new/backdrop-fs8.png" alphatest="blend" transparent="1" zPosition="1" position="0,0" size="1280,720"/>
+	<ePixmap pixmap="MetrixHD/mmp/new/CoverCD-fs8.png" zPosition="5" position="468,98" size="330,294" alphatest="blend" transparent="0" />
+	<widget name="coverArt" pixmap="MetrixHD/mmp/new/no_coverArt-fs8.png" position="516,110" size="267,267" zPosition="4" transparent="1" alphatest="blend" />
+	<ePixmap alphatest="on" pixmap="MetrixHD/mmp/new/dvr-fs8.png" backgroundColor="metrixBackground" position="620,546" size="450,60" transparent="1" zPosition="4"/>
+	<widget name="dvrStatus" pixmaps="MetrixHD/mmp/new/dvr_pl-fs8.png,/usr/share/enigma2/MetrixHD/mmp/new/dvr_pau-fs8.png" zPosition="5"  position="620,546" size="450,60" transparent="1" alphatest="on"/>
+	<widget name="repeat" pixmaps="MetrixHD/mmp/new/dvr_rep1-fs8.png,/usr/share/enigma2/MetrixHD/mmp/new/dvr_rep2-fs8.png" zPosition="5" position="520,530" size="95,95" transparent="1" alphatest="on"/>
+	<widget name="shuffle" pixmaps="MetrixHD/mmp/new/dvr_shuf1-fs8.png,/usr/share/enigma2/MetrixHD/mmp/new/dvr_shuf2-fs8.png" zPosition="4" position="1088,530" size="95,95" transparent="1" alphatest="on"/>
+	<eLabel text="Album:" position="795,100" size="150,45" font="Regular;28" zPosition="9" foregroundColor="#696969" transparent="1" backgroundColor="metrixBackground" />
+	<widget name="album" position="795,133" size="900,50" halign="left" valign="center" transparent="1" zPosition="9" font="SetrixHD;33" backgroundColor="metrixBackground" />
+	<eLabel text="Interpret:" position="795,203" size="150,45" font="Regular;28" zPosition="9" foregroundColor="#696969" transparent="1" backgroundColor="metrixBackground" />
+	<widget name="artist" position="795,236" size="600,50" zPosition="4" transparent="1" font="SetrixHD;33" backgroundColor="metrixBackground" />
+	<widget name="title" position="442,420" size="800,60" zPosition="4" halign="center" valign="center" transparent="1" font="SetrixHD;45" backgroundColor="metrixBackground" />
+	<eLabel text="Track:" position="70,610" size="90,45" font="Regular;28" zPosition="9" foregroundColor="#696969" transparent="1" backgroundColor="metrixBackground" />
+	<widget name="track" position="66,642" size="90,50" zPosition="4" halign="center" valign="center" transparent="1" font="SetrixHD;35" backgroundColor="metrixBackground" />
+	<eLabel text="Genre:" position="795,306" size="150,45" font="Regular;28" zPosition="9" foregroundColor="#696969" transparent="1" backgroundColor="metrixBackground" />
+	<widget name="genre" position="795,339" size="600,50" zPosition="4" transparent="1" font="SetrixHD;33" backgroundColor="metrixBackground" />
+	<eLabel text="Next:" position="807,610" size="150,35" font="Regular;28" zPosition="9" foregroundColor="#696969" transparent="1" backgroundColor="metrixBackground" />
+	<widget name="nextTitle" position="543,650" size="600,45" halign="center" valign="center" zPosition="4" transparent="1" font="SetrixHD;30" backgroundColor="metrixBackground" />
+	<widget name="PositionGauge" position="548,518" size="600,14" zPosition="5" backgroundColor="metrixBackground" pointer="/usr/share/enigma2/MetrixHD/mmp/new/slider_music-fs8.png:600,0" seek_pointer="/usr/share/enigma2/MetrixHD/mmp/new/slider_music-fs8.png:600,0" transparent="1"/>
+	<ePixmap alphatest="blend" pixmap="/usr/share/enigma2/MetrixHD/mmp/new/slidershadow_music-fs8.png" position="548,518" size="600,14" zPosition="6" backgroundColor="metrixBackground" transparent="1" />
+	<widget source="session.CurrentService" render="Label" position="1095,485" size="116,40" zPosition="4" font="Regular;24" halign="left" foregroundColor="#FFFFFF" backgroundColor="metrixBackground" transparent="1" >
+	  <convert type="ServicePosition">Length,ShowHours</convert>
+	</widget>
+	<widget source="session.CurrentService" render="Label" backgroundColor="metrixBackground" position="505,485" size="198,40" zPosition="4" font="Regular;24" halign="left" transparent="1" >
+	  <convert type="ServicePosition">Position,ShowHours</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="1081,31" size="169,80" zPosition="10" font="SetrixHD; 60" halign="left" backgroundColor="metrixBackground" transparent="1" valign="top">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="921,77" size="148,29" zPosition="10" font="Regular; 18" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="944,46" size="125,30" zPosition="10" font="Regular; 18" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>						
+</screen>
+<screen name="MerlinMusicPlayerFileList" position="0,0" size="1280,720" title="Merlin Music Player" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap position="40,25" zPosition="-10" size="1205,650" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
+    <eLabel position="802,222" size="424,240" zPosition="2" backgroundColor="metrixForeground" />
+    <ePixmap position="802,222" size="426,426" zPosition="3" pixmap="MetrixHD/mmp/new/wallpaper-fs8.png" />
+    <widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="metrixBackground2" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" backgroundColor="metrixBackground2" transparent="1" foregroundColor="metrixAccent1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,64" size="161,29" font="Regular; 16" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget source="Title" render="Label" position="70,47" size="900,53" font="SetrixHD;35" backgroundColor="metrixBackground2" transparent="1" />
+    <widget name="headertext" position="70,115" size="900,38" font="SetrixHD;25" backgroundColor="metrixBackground" transparent="1" />
+    <eLabel position="70,155" size="900,2" backgroundColor="metrixAccent1" />
+    <widget name="list" position="70,165" size="700,450" zPosition="3" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="metrixBackground" transparent="1" />
+</screen>
+<screen name="MerlinMusicPlayerLyrics" position="0,0" size="1280,720" title="Merlin Music Player" flags="wfNoBorder" backgroundColor="transparent">
+   <ePixmap position="40,25" zPosition="-10" size="1205,650" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
+    <eLabel position="802,222" size="424,240" zPosition="2" backgroundColor="metrixForeground" />
+    <ePixmap position="802,222" size="426,426" zPosition="3" pixmap="MetrixHD/mmp/new/wallpaper-fs8.png" />
+    <widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="metrixBackground2" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" backgroundColor="metrixBackground2" transparent="1" foregroundColor="metrixAccent1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,64" size="161,29" font="Regular; 16" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget source="Title" render="Label" position="70,47" size="800,53" font="SetrixHD;35" backgroundColor="metrixBackground2" transparent="1" />
+    <widget name="headertext" position="70,125" zPosition="1" size="700, 38" font="SetrixHD;24" transparent="1" backgroundColor="metrixBackground" />
+    <widget name="resulttext" position="70,175" zPosition="1" size="700, 25" font="SetrixHD;20" transparent="1" backgroundColor="metrixBackground" />
+    <widget name="lyric_text" position="70,230" zPosition="2" size="700,400" font="SetrixHD;22" transparent="1" backgroundColor="metrixBackground" />
+</screen>
+<screen name="MerlinMusicPlayerSetup" position="0,0" size="1280,720" title="Merlin Music Player Setup" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap position="40,25" zPosition="-10" size="1205,650" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
+    <eLabel position="802,222" size="424,240" zPosition="2" backgroundColor="metrixForeground" />
+    <ePixmap position="802,222" size="426,426" zPosition="3" pixmap="MetrixHD/mmp/new/wallpaper-fs8.png" />
+    <widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="metrixBackground2" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" backgroundColor="metrixBackground2" transparent="1" foregroundColor="metrixAccent1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,64" size="161,29" font="Regular; 16" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget source="Title" render="Label" position="70,47" size="800,53" font="SetrixHD;35" backgroundColor="metrixBackground2" transparent="1" />
+    <widget name="config" position="70,150" size="700,450" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" />
+    <ePixmap pixmap="MetrixHD/buttons/red.png" position=" 70,635" size="30,40" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/green.png" position="360,635" size="30,40" alphatest="blend" />
+    <widget source="key_red" render="Label" position="105,637" size="240,24" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget source="key_green" render="Label" position="395,637" size="240,24" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
+</screen>
+<screen name="MerlinMusicPlayerSongList" position="0,0" size="1280,720" title="Songlist" flags="wfNoBorder" backgroundColor="transparent">
+   <ePixmap position="40,25" zPosition="-10" size="1205,650" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
+    <eLabel position="802,222" size="424,240" zPosition="2" backgroundColor="metrixForeground" />
+    <ePixmap position="802,222" size="426,426" zPosition="3" pixmap="MetrixHD/mmp/new/wallpaper-fs8.png" />
+    <widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="metrixBackground2" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" backgroundColor="metrixBackground2" transparent="1" foregroundColor="metrixAccent1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,64" size="161,29" font="Regular; 16" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <widget source="Title" render="Label" position="70,57" size="800,53" font="SetrixHD;35" backgroundColor="metrixBackground2" transparent="1" />
+    <widget name="headertext" position="70,115" size="700,40" font="SetrixHD;23" backgroundColor="metrixBackground" transparent="1" />
+    <eLabel position="70,155" size="700,2" backgroundColor="metrixAccent1" />
+    <widget name="list" position="70,165" size="700,450" zPosition="3" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="metrixBackground" transparent="1" />
+</screen>
+<!-- iDreamMerlin & MerlinMusicPlayer New *-->

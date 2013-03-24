@@ -1,0 +1,9 @@
+<!-- /* ResolutionInfo -->
+  <widget source="session.CurrentService" render="Label" position="528,667" size="64,30" font="Regular; 20" halign="right" backgroundColor="metrixBackground" transparent="1" valign="center" foregroundColor="metrixAccent1">
+    <convert type="ServiceInfo">VideoWidth</convert>
+  </widget>
+  <eLabel text="x" position="591,667" size="15,30" font="Regular; 20" halign="center" backgroundColor="metrixBackground" transparent="1" valign="center" foregroundColor="metrixAccent1" />
+  <widget source="session.CurrentService" render="Label" position="606,667" size="65,30" font="Regular; 20" halign="left" backgroundColor="metrixBackground" transparent="1" valign="top" foregroundColor="metrixAccent1">
+    <convert type="ServiceInfo">VideoHeight</convert>
+  </widget>
+<!-- ResolutionInfo */ -->

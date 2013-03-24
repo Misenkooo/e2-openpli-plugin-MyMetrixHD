@@ -1,0 +1,87 @@
+<!--* WebradioFS New -->
+  <screen name="WebradioFSScreen_10" position="center,70" backgroundColor="#32000000" size="1080,600" title="webradioFS" >
+  <!--top on left site in stream-list-Screen-->
+    <widget name="rec_pic" position="3,5" pixmap="MetrixHD/icons/ico_rec_on.png" size="74,23" zPosition="6" backgroundColor="metrixBackground" alphatest="blend" /> 
+    <widget name="rec_txt" position="0,0" size="760,35" font="Regular;22" halign="center" valign="center" foregroundColor="metrixSelection" zPosition="3" backgroundColor="#32000000" transparent="0"/> 
+	<widget name="rec_txt2" position="0,0" size="760,35" font="Regular;22" halign="center" valign="center" foregroundColor="metrixSelection" zPosition="3" backgroundColor="#32000000" transparent="0"/> 
+<!--left site in Screen for Streams, Genres...-->
+    <widget name="streamlist" zPosition="2" position="0,35" size="760,440" foregroundColor="metrixAccent1" backgroundColor="#32000000" scrollbarMode="showOnDemand" transparent="0" /> 
+<!--left site in Screen for menus-->
+<!--pics: extended help-->
+    <widget name="help" zPosition="3" position="0,0" size="760,485" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" font="Regular;18" /> 
+<!--left site in Screen for help and info -->
+    <widget name="info" zPosition="3" position="0,0" size="760,485" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" scrollbarMode="showOnDemand"/>
+<!--bottom left-->
+    <widget name="playtext" position="10,470" zPosition="2" size="1060,85" font="SetrixHD; 40" valign="center" halign="center" foregroundColor="metrixAccent1" backgroundColor="#32000000" transparent="0" noWrap="1" />           
+<!--bottom in Screen for streams and genres, ... (button-line)-->
+    <ePixmap pixmap="MetrixHD/buttons/red.png" position="15,570" size="30,46" backgroundColor="metrixBackground" alphatest="blend" />
+    <widget name="green_pic" pixmap="MetrixHD/buttons/green.png" position="215,570" size="30,46" backgroundColor="metrixBackground" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/yellow.png" position="475,570" size="30,46" backgroundColor="metrixBackground" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/blue.png" position="675,570" size="30,46" backgroundColor="metrixBackground" alphatest="blend" />
+    <widget name="key_red" position="55,570" zPosition="1" size="200,30" font="Regular;20" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" noWrap="1" transparent="1" />
+    <widget name="key_green" position="255,570" zPosition="1" size="230,30" font="Regular;20" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" noWrap="1" transparent="1" />
+    <widget name="key_yellow" position="515,570" zPosition="1" size="130,30" font="Regular;20" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" noWrap="1" transparent="1" />
+    <widget name="key_blue" position="715,570" zPosition="1" size="130,30" font="Regular;20" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" noWrap="1" transparent="1" />
+    <ePixmap pixmap="MetrixHD/buttons/key_menu.png" position="1000,555" size="81,40" alphatest="blend" transparent="1"/>
+    <ePixmap pixmap="MetrixHD/buttons/key_info.png" position="890,570" size="30,29" alphatest="blend" transparent="1"/>
+    <ePixmap pixmap="MetrixHD/buttons/key_help.png" position="940,570" size="30,29" alphatest="blend" transparent="1"/>
+<!--
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/webradioFS/skin/images/wbrl.png" position="930,582" size="120,30" alphatest="blend" zPosition="5" transparent="1"/>
+-->
+<!--bottom in Screen for menu, ...-->
+   <widget name="buttons_abdeck" position="415,556" zPosition="2" size="800,50" font="Regular;20" valign="center" halign="center" foregroundColor="metrixSelection" backgroundColor="metrixBackground" />           
+   <widget name="key_red2" position="55,570" zPosition="3" size="200,30" font="Regular;20" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" noWrap="1" transparent="1" />
+   <widget name="key_green2" position="285,570" zPosition="3" size="260,30" font="Regular;20" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" noWrap="1" transparent="1" />
+<!--right site in Screen-->
+   <widget name="titel_fav" position="790,100" zPosition="3" size="72,30" font="Regular;19" halign="left" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" />
+   <widget name="fav" position="870,100" zPosition="3" size="260,30" font="Regular;19" halign="left" foregroundColor="metrixSelection" backgroundColor="metrixBackground" transparent="1" />
+   <widget name="streamlogo" position="810,10" zPosition="2" size="240,75" alphatest="blend" />
+   <widget name="stream_name" position="810,10" zPosition="2" size="240,75" font="Regular;22" halign="center" valign="center" foregroundColor="metrixSelection" backgroundColor="metrixBackground" transparent="1"/>
+   <widget name="picture" position="796,205" zPosition="5" size="267,267" alphatest="blend" />
+
+   <eLabel text="Bitrate:" position="790,127" zPosition="1" size="72,30" font="Regular;19" halign="left" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" />           
+   <widget name="skin_bitrate" position="870,127" zPosition="1" size="175,30" font="Regular;19" halign="left" foregroundColor="metrixSelection" backgroundColor="metrixBackground" transparent="1" />           
+   <eLabel text="Genre:" position="790,175" zPosition="1" size="72,30" font="Regular;19" halign="left" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" />           
+   <widget name="skin_genres" position="870,175" zPosition="0" size="175,45" font="Regular;19" halign="left" foregroundColor="metrixSelection" backgroundColor="metrixBackground" transparent="1" />           
+   <eLabel text="Typ:" position="790,150" zPosition="1" size="72,30" font="Regular;19" halign="left" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" />           
+   <widget name="skin_typ" position="870,150" zPosition="0" size="175,30" font="Regular;19" halign="left" foregroundColor="metrixSelection" backgroundColor="metrixBackground" transparent="1" />           
+<!--lines-->
+    <eLabel position="0,553"  size="1080,2" zPosition="13" backgroundColor="metrixAccent1"/>
+    <eLabel position="770,0"  size="2,480" zPosition="13" backgroundColor="metrixAccent1"/>
+	<eLabel position="0,478"  size="1080,2" zPosition="13" backgroundColor="metrixAccent1"/>
+  </screen>
+<screen name="WebradioFSSetup_10" position="center,70"  backgroundColor="#32000000" size="1080,600" title="webradioFS" >
+<!--top on left site in stream-list-Screen-->
+    <widget name="rec_txt" position="0,0" size="760,35" font="Regular;22" halign="center" valign="center" foregroundColor="metrixAccent1" zPosition="2" backgroundColor="#32000000" transparent="0"/> 
+<!--left site in Screen for Streams, Genres...-->
+    <widget name="config" zPosition="3" position="0,35" size="760,440" foregroundColor="metrixAccent1" backgroundColor="black" scrollbarMode="showOnDemand" />
+<!--bottom left-->
+     <widget name="playtext" position="10,470" zPosition="2" size="1060,85" font="SetrixHD; 40" valign="center" halign="center" foregroundColor="metrixAccent1" backgroundColor="#32000000" transparent="0" noWrap="1" />                      
+<!--bottom in Screen for streams and genres, ... (button-line)-->
+    <ePixmap pixmap="MetrixHD/buttons/red.png" position="15,570" size="30,46" backgroundColor="metrixBackground" alphatest="blend" />
+    <widget name="green_pic" pixmap="MetrixHD/buttons/green.png" position="215,570" size="30,46" backgroundColor="metrixBackground" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/yellow.png" position="475,570" size="30,46" backgroundColor="metrixBackground" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/blue.png" position="675,570" size="30,46" backgroundColor="metrixBackground" alphatest="blend" />
+    <widget name="key_red" position="55,570" zPosition="1" size="200,30" font="Regular;20" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" noWrap="1" transparent="1" />
+    <widget name="key_green" position="255,570" zPosition="1" size="230,30" font="Regular;20" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" noWrap="1" transparent="1" />
+    <widget name="key_yellow" position="515,570" zPosition="1" size="130,30" font="Regular;20" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" noWrap="1" transparent="1" />
+    <widget name="key_blue" position="715,570" zPosition="1" size="130,30" font="Regular;20" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" noWrap="1" transparent="1" />
+ <!--right site in Screen-->
+    <widget name="titel_fav" position="790,100" zPosition="3" size="72,30" font="Regular;19" halign="left" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="fav" position="870,100" zPosition="3" size="260,30" font="Regular;19" halign="left" foregroundColor="metrixSelection" backgroundColor="metrixBackground" transparent="1" />
+<!--<widget name="streamlogo" position="810,10" zPosition="2" size="240,75" alphatest="blend" />
+           -->
+    <widget name="stream_name" position="810,10" zPosition="2" size="240,75" font="Regular;22" halign="center" valign="center" foregroundColor="metrixSelection" backgroundColor="metrixBackground" transparent="1"/>
+    <widget name="picture" position="796,220" zPosition="5" size="267,267" alphatest="blend" />
+    <eLabel text="Bitrate:" position="790,127" zPosition="1" size="72,30" font="Regular;19" halign="left" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" />           
+    <widget name="skin_bitrate" position="870,127" zPosition="1" size="175,30" font="Regular;19" halign="left" foregroundColor="metrixSelection" backgroundColor="metrixBackground" transparent="1" />           
+    <eLabel text="Genre:" position="790,175" zPosition="1" size="72,30" font="Regular;19" halign="left" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" />           
+    <widget name="skin_genres" position="870,175" zPosition="0" size="175,45" font="Regular;19" halign="left" foregroundColor="metrixSelection" backgroundColor="metrixBackground" transparent="1" />           
+    <eLabel text="Typ:" position="790,150" zPosition="1" size="72,30" font="Regular;19" halign="left" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" />           
+    <widget name="skin_typ" position="870,150" zPosition="0" size="175,30" font="Regular;19" halign="left" foregroundColor="metrixSelection" backgroundColor="metrixBackground" transparent="1" />           
+<!--lines-->
+    <eLabel position="0,553"  size="1080,2" zPosition="13" backgroundColor="metrixAccent1"/>
+    <eLabel position="770,0"  size="2,480" zPosition="13" backgroundColor="metrixAccent1"/>
+	<eLabel position="0,478"  size="1080,2" zPosition="13" backgroundColor="metrixAccent1"/>
+  </screen>
+<!-- WebradioFS New *-->  

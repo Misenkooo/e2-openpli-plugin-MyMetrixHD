@@ -1,0 +1,17 @@
+<!-- /* TunerInfo -->
+  <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="713,668" size="75,33" font="Regular; 18" backgroundColor="metrixBackground" transparent="1" halign="left" valign="top">
+    <convert type="FrontendInfo">TYPE</convert>
+    <convert type="ValueRange">0,0</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="713,668" size="73,33" font="Regular; 18" backgroundColor="metrixBackground" transparent="1" halign="left" valign="top">
+    <convert type="FrontendInfo">TYPE</convert>
+    <convert type="ValueRange">1,1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="713,668" size="73,30" font="Regular; 18" backgroundColor="metrixBackground" transparent="1" halign="left" valign="top">
+    <convert type="FrontendInfo">TYPE</convert>
+    <convert type="ValueRange">2,2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+<!-- TunerInfo */-->

@@ -1,0 +1,19 @@
+<!-- /* HEALTH WIDGET -->
+    <eLabel text="SNR" position="71,528" size="53,33" font="Regular; 20" backgroundColor="metrixBackground" transparent="1" valign="top" foregroundColor="transpWhite" halign="right" />
+    <widget source="session.FrontendStatus" render="Label" position="388,528" size="70,33" font="Regular; 20" backgroundColor="metrixBackground" transparent="1" foregroundColor="transpWhite" valign="top">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Progress" position="131,540" size="250,5" zPosition="100" pixmap="MetrixHD/volume.png" transparent="1">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <eLabel text="AGC" position="466,528" size="60,33" font="Regular; 20" backgroundColor="metrixBackground" transparent="1" valign="top" foregroundColor="transpWhite" halign="right" />
+    <widget source="session.FrontendStatus" render="Label" position="787,528" size="70,33" font="Regular; 20" backgroundColor="metrixBackground" transparent="1" foregroundColor="transpWhite" valign="top">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Progress" position="531,540" size="250,5" zPosition="1" pixmap="MetrixHD/volume.png" transparent="1">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <eLabel position="131,542" size="250,1" backgroundColor="transpWhite" />
+    <eLabel position="531,542" size="250,1" backgroundColor="transpWhite" />
+    <eLabel name="HealthWidgetBG" position="64,525" size="1150,35" backgroundColor="metrixBackground2" zPosition="-20" />
+<!-- HEALTH WIDGET */ -->

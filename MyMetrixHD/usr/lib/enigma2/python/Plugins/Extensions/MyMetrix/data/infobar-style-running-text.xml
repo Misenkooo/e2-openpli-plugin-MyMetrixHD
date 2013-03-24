@@ -1,0 +1,39 @@
+<!-- /* STYLE Running Text -->
+    <eLabel name="new eLabel" position="288,615" size="950,1" zPosition="6" backgroundColor="metrixAccent1" />
+  <widget source="session.CurrentService" render="XPicon" position="40,570" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <ePixmap position="1110,563" zPosition="3" size="400,55" pixmap="MetrixHD/back.png" transparent="0" />
+  <widget source="session.Event_Now" render="Label" position="1091,563" zPosition="4" size="75,30" font="Regular; 19" halign="right" backgroundColor="metrixBackground" transparent="1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel text="-" position="1169,563" size="15,30" font="Regular; 19" zPosition="4" halign="center" backgroundColor="metrixBackground" transparent="1" />
+  <widget source="session.Event_Now" render="Label" position="1177,563" zPosition="4" size="60,30" font="Regular; 19" halign="right" backgroundColor="metrixBackground" transparent="1">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="session.Event_Now" render="MetrixRunningText" position="286,561" size="1280,56" font="SetrixHD; 40" halign="left" backgroundColor="metrixBackground" options="movetype=running,startpoint=0,startdelay=2000,oneshot=2000,step=2,steptime=36,always=1,noWrap" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="1125,586" size="113,30" zPosition="4" font="Regular; 19" halign="right" backgroundColor="metrixBackground" transparent="1">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="1091,617" size="75,28"  font="Regular; 18" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1" noWrap="1" valign="top">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel text="-" position="1169,617" size="15,28" font="Regular; 18" halign="center" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1" noWrap="1" valign="top" />
+  <widget source="session.Event_Next" render="Label" position="1177,617" size="60,28" font="Regular; 18" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1" noWrap="1" valign="top">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="286,624" size="788,40" font="Regular; 26" halign="left" backgroundColor="metrixBackground" transparent="1" foregroundColor="metrixAccent1" valign="top">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="1124,639" size="113,28" font="Regular; 18" halign="right" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+<!-- STYLE Running Text */ -->

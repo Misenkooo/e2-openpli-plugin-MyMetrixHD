@@ -1,0 +1,4 @@
+<!--/* MetrixUpdater -->
+    <widget render="MetrixUpdater" source="global.CurrentTime" position="40,570" size="220,132" zPosition="10" backgroundColor="metrixBackground">
+    </widget>
+<!--MetrixUpdater */-->
