@@ -335,7 +335,7 @@ class MyMetrix(ConfigListScreen, Screen):
 		try:
 			returnValue = self["config"].getCurrent()[1].value
 			#print "\n selectedOption: " + returnValue + "\n"
-			path = "/usr/lib/enigma2/python/Plugins/Extensions/MyMetrix/images/" + returnValue + ".png"
+			path = "/usr/lib/enigma2/python/Plugins/Extensions/MyMetrix/images/" + returnValue + ".jpg"
 			return path
 		except:
 			return "/usr/lib/enigma2/python/Plugins/Extensions/MyMetrix/images/metrixweather.png"
