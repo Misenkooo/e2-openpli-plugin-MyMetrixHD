@@ -1360,10 +1360,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="Title" render="Label" position="491,50" size="760,45" font="SetrixHD; 29" backgroundColor="metrixBackground" transparent="1" />
     <widget name="list" position="490,118" size="710,455" scrollbarMode="showOnDemand" itemHeight="40" transparent="1" />
     <widget name="freeDiskSpace" position="491,584" size="700,35" font="SetrixHD;25" valign="center" backgroundColor="metrixBackground" transparent="1" />
-    <widget source="Service" render="Label" position="61,50" size="370,90" font="SetrixHD; 27" backgroundColor="metrixBackground" transparent="1">
-      <convert type="MovieInfo">ShortDescription</convert>
-    </widget>
-    <widget source="Service" render="Label" position="61,124" size="369,34" font="Regular; 21" backgroundColor="metrixBackground" transparent="1">
+    <widget source="Service" render="Label" position="61,50" size="369,34" font="Regular; 21" backgroundColor="metrixBackground" transparent="1">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
     <widget source="Service" render="Label" position="64,543" size=" 80, 34" font="SetrixHD;25" halign="left" backgroundColor="metrixBackground" transparent="1">
@@ -1373,7 +1370,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="Service" render="Label" position="280,543" size="150, 34" font="SetrixHD;25" halign="right" backgroundColor="metrixBackground" transparent="1">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget source="Service" render="Label" position="64,158" size="367,384" font="Regular; 21" foregroundColor="metrixAccent1" backgroundColor="#32000000" transparent="1" valign="top" options="movetype=running,direction=top,step=1,steptime=100,oneshot=5000,wrap">
+    <widget source="Service" render="Label" position="64,84" size="367,459" font="Regular; 21" foregroundColor="metrixAccent1" backgroundColor="#32000000" transparent="1" valign="top" options="movetype=running,direction=top,step=1,steptime=100,oneshot=5000,wrap">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!-- /*Buttons-->
