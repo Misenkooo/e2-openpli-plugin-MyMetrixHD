@@ -1,0 +1,9 @@
+Package: e2-plugin-openpli-mymetrixhd
+Version: 1.1
+Description: MyMetrixHD Plugin for OpenPLI 3.x images
+Section: extra
+Priority: optional
+Maintainer: Misenko <misenko@gmail.com>
+Architecture: all
+OE: enigma2
+Homepage: https://github.com/Misenkooo/e2-openpli-plugin-MyMetrixHD
