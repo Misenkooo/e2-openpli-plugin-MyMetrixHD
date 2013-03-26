@@ -1,0 +1,9 @@
+<!-- /* InfoWidget Provider and Frequenzy(CENTER) -->
+  <widget source="session.CurrentService" render="Label" position="center,35" size="460,45" font="SetrixHD; 26" valign="center" backgroundColor="metrixBackground" transparent="1" halign="left">
+    <convert type="ServiceName">Provider</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="center,61" size="460,60" zPosition="1" font="RegularLight; 22" valign="center" halign="left" transparent="1" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" noWrap="1">
+    <convert type="MetrixExtraInfo">TransponderInfo</convert>
+  </widget>
+  <eLabel name="new ePixmap" position="391,40" size="480,70" backgroundColor="metrixBackground" transparent="0" zPosition="-99" />
+<!-- InfoWidget Provider and Frequenzy(CENTER) */ -->

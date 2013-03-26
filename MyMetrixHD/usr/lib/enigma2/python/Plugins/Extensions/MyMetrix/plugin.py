@@ -151,6 +151,7 @@ config.plugins.MyMetrix.InfobarClockWidget = ConfigSelection(default="infobar-cl
 config.plugins.MyMetrix.InfobarInfoWidget = ConfigSelection(default="infobar-infowidget-none", choices = [
 				("infobar-infowidget-provider", _("Show Provider")),
 				("infobar-infowidget-cam", _("Show Provider and CAM/ECM")),
+				("infobar-infowidget-provider-frequenzy", _("Show Provider and Frequenzy")),
 				("infobar-infowidget-none", _("Off"))
 				])
 config.plugins.MyMetrix.InfobarTunerInfo = ConfigSelection(default="infobar-tunerinfo-ab", choices = [
@@ -221,6 +222,7 @@ config.plugins.MyMetrix.SecondInfobarEPGWidget = ConfigSelection(default="second
 config.plugins.MyMetrix.SecondInfobarInfoWidget = ConfigSelection(default="infobar-infowidget-none", choices = [
 				("infobar-infowidget-provider", _("Show Provider")),
 				("infobar-infowidget-cam", _("Show Provider and CAM/ECM")),
+				("infobar-infowidget-provider-frequenzy", _("Show Provider and Frequenzy")),
 				("infobar-infowidget-none", _("Off"))
 				])
 config.plugins.MyMetrix.SecondInfobarTunerInfo = ConfigSelection(default="infobar-tunerinfo-ab", choices = [
@@ -240,7 +242,7 @@ config.plugins.MyMetrix.SecondInfobarCryptInfo = ConfigSelection(default="infoba
 				])	
 
 def main(session, **kwargs):
-	session.open(MyMetrix,"/usr/lib/enigma2/python/Plugins/Extensions/MyMetrix/images/metrixcolors.png")
+	session.open(MyMetrix,"/usr/lib/enigma2/python/Plugins/Extensions/MyMetrix/images/metrixcolors.jpg")
 
 def Plugins(**kwargs):
 	return PluginDescriptor(name="MyMetrix", description=_("Configuration tool for MetrixHD"), where = PluginDescriptor.WHERE_PLUGINMENU, icon="plugin.png", fnc=main)
@@ -338,7 +340,7 @@ class MyMetrix(ConfigListScreen, Screen):
 			path = "/usr/lib/enigma2/python/Plugins/Extensions/MyMetrix/images/" + returnValue + ".jpg"
 			return path
 		except:
-			return "/usr/lib/enigma2/python/Plugins/Extensions/MyMetrix/images/metrixweather.png"
+			return "/usr/lib/enigma2/python/Plugins/Extensions/MyMetrix/images/metrixweather.jpg"
 		
 	def UpdatePicture(self):
 		self.PicLoad.PictureData.get().append(self.DecodePicture)

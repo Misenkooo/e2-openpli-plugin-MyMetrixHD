@@ -34,6 +34,6 @@
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
-    <eLabel name="new eLabel" position="288,620" size="950,1" backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" />
-    <eLabel position="288,620" size="950,1" backgroundColor="metrixAccent1" />
+    <eLabel name="new eLabel" position="288,615" size="950,1" backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" />
+    <eLabel position="288,615" size="950,1" backgroundColor="metrixAccent1" />
 <!-- STYLE CLASSIC */ -->
