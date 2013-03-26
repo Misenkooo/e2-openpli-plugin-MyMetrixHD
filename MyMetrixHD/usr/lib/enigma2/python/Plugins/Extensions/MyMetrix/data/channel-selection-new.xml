@@ -69,6 +69,6 @@
     <!--ClockWidget */-->
     <ePixmap position="401,41" zPosition="-10" size="825,403" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
     <ePixmap position="401,450" zPosition="-10" size="825,240" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
-	<widget source="ServiceEvent" render="XPiconChannel" position="112,50" size="220,96" zPosition="2" transparent="1" alphatest="blend" />
+	<widget source="ServiceEvent" render="XPiconChannel" position="112,50" size="220,132" zPosition="2" transparent="1" alphatest="blend" />
 </screen>
 <!-- ChannelSelection New *--> 
