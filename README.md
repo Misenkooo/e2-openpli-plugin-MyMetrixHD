@@ -5,6 +5,8 @@ This is a port of MyMetrixHD plugin originally created by iMaxxx for VTi e2 imag
 
 You may find the latest installation package [here](https://github.com/Misenkooo/e2-openpli-plugin-MyMetrixHD/tree/master/binaries)
 
+Note: If you already have any non-ipkg version of this plugin installed, there is nothing you need to do but install the plugin via ftp or usb. Old plugin files will be rewritten.
+
 Screenshots:
 
 ![Screenshot](https://raw.github.com/Misenkooo/e2-openpli-plugin-MyMetrixHD/master/screenshots/MetrixHD.jpg)
