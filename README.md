@@ -3,7 +3,7 @@ e2-openpli-plugin-MyMetrixHD
 
 This is a port of MyMetrixHD plugin originally created by iMaxxx for VTi e2 images. This plugin is compatible with OpenPLI 3.x images.
 
-You may find the latest installation package [here](http://openpli.org/forums/topic/28287-mymetrixhd-for-openpli-3x/)
+You may find the latest installation package [here](https://github.com/Misenkooo/e2-openpli-plugin-MyMetrixHD/tree/master/binaries)
 
 Screenshots:
 
