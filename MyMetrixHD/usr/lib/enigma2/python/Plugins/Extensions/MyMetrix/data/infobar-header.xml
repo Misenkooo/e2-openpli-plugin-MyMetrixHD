@@ -36,5 +36,5 @@
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position="1,560" zPosition="-10" size="1283,160" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
+    <eLabel position="-1,560" size="1283,160" backgroundColor="metrixBackground" zPosition="-10" name="InfoBar" />
 <!-- Infobar Header *-->

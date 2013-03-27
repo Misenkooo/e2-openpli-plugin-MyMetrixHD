@@ -1,7 +1,6 @@
 <!--* Second Info Bar Header /-->
 <screen name="SecondInfoBar" position="0,0" size="1283,723" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap position="1,560" zPosition="-10" size="1283,160" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
-	<ePixmap pixmap="MetrixHD/icons/ico_hbbtv_off.png" position="907,668" size="64,24" zPosition="1" alphatest="blend"/>
+    <eLabel position="-1,560" zPosition="-10" size="1283,160" backgroundColor="metrixBackground" transparent="0" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD/icons/ico_hbbtv_on.png" position="907,668" size="64,24" zPosition="2" alphatest="blend" >
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
