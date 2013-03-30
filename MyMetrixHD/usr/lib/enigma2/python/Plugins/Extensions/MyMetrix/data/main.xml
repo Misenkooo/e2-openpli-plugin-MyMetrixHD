@@ -1010,7 +1010,7 @@
     <widget source="help" render="Label" position="70,540" size="700,88" font="SetrixHD;20" backgroundColor="metrixBackground" transparent="1" />
     <ePixmap pixmap="MetrixHD/buttons/key_red.png" position="70,635" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_green.png" position="610,635" size="30,40" alphatest="blend" />
-    <widget source="key_red" render="Label" position="105,637" size="260,25" zPosition="1" font="S alphatest=etrixHD;22" backgroundColor="metrixBackground" transparent="1" />
+    <widget source="key_red" render="Label" position="105,637" size="260,25" zPosition="1" font="SetrixHD 22" backgroundColor="metrixBackground" transparent="1" />
     <widget source="key_green" render="Label" position="645,637" size="260,25" zPosition="1" font="SetrixHD;22" backgroundColor="metrixBackground" transparent="1" />
     <ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD/icons/setup.png" transparent="1" alphatest="blend" />
   </screen>
@@ -1668,7 +1668,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="global.CurrentTime" render="Label" position="931,64" size="161,29" font="Regular; 16" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1">
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
-    <widget source="Title" render="Label" position="70,47" size="800,50" font="SetrixHD;35" backgroundColor="metrixBackground2" transparent="1" />
+    <widget source="T
+  itle" render="Label" position="70,47" size="800,50" font="SetrixHD;35" backgroundColor="metrixBackground2" transparent="1" />
     <widget name="list" position="60, 116" size="700,500" zPosition="4" scrollbarMode="showOnDemand" backgroundColor="metrixBackground" transparent="1" />
     <!--
     <widget name="text" position="0,0" size="0,0" />
@@ -2902,7 +2903,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="global.CurrentTime" render="Label" position="921,73" size="148,29" font="SetrixHD; 20" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1">
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="943,45" size="125,30" font="SetrixHD; 20" halign="right" backgroundColor="metrix size=Background2" foregroundColor="metrixAccent1" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="943,45" size="125,30" font="SetrixHD; 20" halign="right" backgroundColor="metrix size=0,0Background2" foregroundColor="metrixAccent1" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
     <eLabel name="new eLabel" position="154,666" size="980,1" backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" zPosition="-1" />
@@ -4167,7 +4168,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel position="70,143" size="720,464" zPosition="1" backgroundColor="metrixAccent1" />
     <widget name="serverlist" position="80,155" size="700,437" zPosition="3" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
     <ePixmap pixmap="MetrixHD/buttons/key_red.png" position="70,635" size="30,40" alphatest="blend" />
-    <ePixmap pixmap="MetrixHD/buttons/key_green.png" position="265,635" size="30,40" alphatest="blend" />
+    <ePixmap pixmap="MetrixHD/buttons/key_green.png" position="265,635" si
+				{ze="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_yellow.png" position="470,635" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_blue.png" position="675,635" size="30,40" alphatest="blend" />
     <widget name="key_red" position="103,635" size="160,24" zPosition="1" font="SetrixHD; 20" halign="left" backgroundColor="metrixBackground" transparent="1" />
@@ -4795,7 +4797,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="languagetext" position="535,305" size="150,23" font="SetrixHD;21" backgroundColor="metrixBackground" transparent="1" />
     <widget name="text" position="670,120" size="540,300" font="SetrixHD;22" backgroundColor="metrixBackground" transparent="1" />
     <widget source="list" render="Listbox" position="510,430" size="700,160" zPosition="13" scrollbarMode="showO535,305nDemand" transparent="1">
-      <convert type="T /emplatedMultiContent">
+      <convert type="T /emplatedMultiConte /nt">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("SetrixHD", 22)],
 				"itemHeight": 32
