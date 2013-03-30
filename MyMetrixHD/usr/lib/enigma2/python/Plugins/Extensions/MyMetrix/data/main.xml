@@ -455,13 +455,14 @@
   </screen>
   <screen name="About" position="1,1" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="58,51" zPosition="-11" size="861,595" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
-    <widget name="AboutScrollLabel" position="70,75" size="861,595" zPosition="3" font="SetrixHD;25" backgroundColor="background" transparent="1" />
-    <eLabel text="About OpenPLi" position="20,552" size="1273,296" font="SetrixHD; 150" backgroundColor="metrixPreTrans" transparent="1" foregroundColor="metrixPreTrans" valign="top" zPosition="-20" />
-    <eLabel text="skin support on et-view-support.com" position="69,610" size="700,40" font="SetrixHD; 25" backgroundColor="background" transparent="1" />
+    <widget name="AboutScrollLabel" position="70,61" size="861,595" zPosition="3" font="SetrixHD;28" backgroundColor="background" transparent="1" />
+	<eLabel text="About et9x00 Series" position="20,552" size="1273,296" font="SetrixHD; 150" backgroundColor="metrixPreTrans" transparent="1" foregroundColor="metrixPreTrans" valign="top" zPosition="-20" />
+    <eLabel text="Support for et9x00 " position="70,575" size="700,40" font="SetrixHD; 26" backgroundColor="background" transparent="1" />
+    <eLabel text="www.et-view-support.com" position="69,610" size="700,40" font="SetrixHD; 26" backgroundColor="background" transparent="1" />
     <eLabel text="skin by iMaxxx" position="961,418" size="270,80" font="SetrixHD; 40" backgroundColor="metrixPreBlack" transparent="1" valign="top" halign="left" />
     <eLabel text="Mod by IPMAN" position="961,468" size="270,80" font="SetrixHD; 40" backgroundColor="metrixPreBlack" transparent="1" valign="top" halign="left" />
-    <ePixmap position="957,59" size="256,256" zPosition="2" pixmap="MetrixHD/icons/info.png" transparent="1" alphatest="blend" />
-    <ePixmap position="400,120" size="495,585" pixmap="MetrixHD/menu/db.png" transparent="1" alphatest="blend" zPosition="-7" />
+	<ePixmap position="957,59" size="256,256" zPosition="2" pixmap="MetrixHD/icons/info.png" transparent="1" alphatest="blend" />
+    <ePixmap position="540,175" size="310,300" pixmap="MetrixHD/menu/db.png" transparent="1" alphatest="blend" zPosition="-7" />
     <ePixmap position="950,51" zPosition="-1" size="270,270" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="1" />
     <!-- /*ClockWidget-->
     <widget source="global.CurrentTime" render="Label" position="939,343" size="116,80" font="SetrixHD; 40" halign="right" backgroundColor="metrixBackground2" transparent="1" valign="top">
@@ -1010,7 +1011,7 @@
     <widget source="help" render="Label" position="70,540" size="700,88" font="SetrixHD;20" backgroundColor="metrixBackground" transparent="1" />
     <ePixmap pixmap="MetrixHD/buttons/key_red.png" position="70,635" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_green.png" position="610,635" size="30,40" alphatest="blend" />
-    <widget source="key_red" render="Label" position="105,637" size="260,25" zPosition="1" font="S alphatest=etrixHD 22" backgroundColor="metrixBackground" transparent="1" />
+    <widget source="key_red" render="Label" position="105,637" size="260,25" zPosition="1" font="SetrixHD;22" backgroundColor="metrixBackground" transparent="1" />
     <widget source="key_green" render="Label" position="645,637" size="260,25" zPosition="1" font="SetrixHD;22" backgroundColor="metrixBackground" transparent="1" />
     <ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD/icons/setup.png" transparent="1" alphatest="blend" />
   </screen>
@@ -1658,7 +1659,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <!--Button */-->
   </screen>
   <screen name="PluginDownloadBrowser" position="0,0" size="1280,720" title="Downloadable plugins" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap position="40,25" zPosition="-10" size="1205,650" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
+   <ePixmap position="40,25" zPosition="-10" size="1205,650" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
     <widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="metrixBackground2" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
@@ -1986,8 +1987,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="current_status" position="100,180" size="690,30" font="SetrixHD;22" backgroundColor="metrixBackground" transparent="1" />
     <widget name="red" position="100,251" size="30,30" pixmap="MetrixHD/buttons/red.png" alphatest="blend" />
     <widget name="green" position="100,301" size="30,30" pixmap="MetrixHD/buttons/green.png" alphatest="blend" />
-    <widget name="yellow" position="100,351" size="30 foregroundColor=,30" pixmap="MetrixHD/buttons/yellow.png" alphatest="blend" />
-    <widget name="blue" Service scanpoService scansition="100,401" size="30,30" pixmap="MetrixHD/buttons/blue.png" alphatest="blend" />
+    <widget name="yellow" position="100,351" size="30,30" pixmap="MetrixHD/buttons/yellow.png" alphatest="blend" />
+    <widget name="blue" position="100,401" size="30,30" pixmap="MetrixHD/buttons/blue.png" alphatest="blend" />
     <widget name="red_text" position="140,250" size="600,27" font="SetrixHD;22" halign="left" backgroundColor="metrixBackground" transparent="1" />
     <widget name="green_text" position="140,300" size="600,27" font="SetrixHD;22" halign="left" backgroundColor="metrixBackground" transparent="1" />
     <widget name="yellow_text" position="140,350" size="600,27" font="SetrixHD;22" halign="left" backgroundColor="metrixBackground" transparent="1" />
@@ -2136,7 +2137,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="timerlist" position="70,115" size="700,500" scrollbarMode="showOnDemand" transparent="1" />
     <ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD/icons/timer.png" transparent="1" alphatest="blend" />
   </screen>
-  <screen name="TimeshiftState" position="center,508" zPosition="2" size="860,52" backgroundColor="transpBlack" flags="wfNoBorder">
+  <screen name="TimeshiftState" position="center,300" zPosition="2" size="860,60" backgroundColor="transpBlack" flags="wfNoBorder">
     <widget name="state" position="10,5" size="150,27" font="Regular; 20" halign="center" backgroundColor="transpBlack" />
     <widget source="session.CurrentService" render="Label" position="160, 5" size="150,27" font="Regular; 20" halign="left" foregroundColor="metrixForeground" backgroundColor="transpBlack">
       <convert type="ServicePosition">Remaining</convert>
@@ -2290,7 +2291,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <screen name="WlanConfig" position="0,0" size="1280,720" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
    <ePixmap position="40,25" zPosition="-10" size="1205,650" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
-    <eP valign=ixmap pixmap="MetrixHD/icons/wlan.png" position="890,242" size="256,256" alphatessisignalgnalt="blend" transparent="1" />
+    <ePixmap pixmap="MetrixHD/icons/wlan.png" position="890,242" size="256,256" alphatest="blend" transparent="1" />
     <eLabel text="Wireless Network Configuration..." position="90,47" size="700,43" font="SetrixHD;32" backgroundColor="metrixBackground" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="metrixBackground2" transparent="1">
       <convert type="ClockToText">Default</convert>
@@ -3208,8 +3209,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="castlabel" position=" 70,365" size="700,220" font="SetrixHD;20" backgroundColor="metrixBackground" transparent="1" />
     <widget name="extralabel" position=" 70,170" size="700,350" font="SetrixHD;20" backgroundColor="metrixBackground" transparent="1" />
     <widget name="statusbar" position=" 70,595" size="700,28" font="SetrixHD;20" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" />
-    <ePixmap pixmap="Metrix1HD/buttons/red.png" position=" 70,635" size="30,40" alphatest="b
-    lend" />
+    <ePixmap pixmap="MetrixHD/buttons/red.png" position=" 70,635" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/green.png" position="360,635" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/yellow.png" position="650,635" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/blue.png" position="940,635" size="30,40" alphatest="blend" />
@@ -3516,7 +3516,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <screen name="CoolSearch" position="40,25" size="1200,660" zPosition="1" title="Cool Search" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="0,0" zPosition="-10" size="1200,660" pixmap="MetrixHD/back.png" />
     <eLabel text="Cool Search" position="36,12" size="240,40" font="SetrixHD;28" backgroundColor="black" shadowColor="#000000" halign="left" transparent="1" />        
-    <widget source="global.CurrentTime" render="Label" position="1080,7" size="100,33" font="Regular;26" halign="right" backgroundColor="metrixBacEventTimekground" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="1080,7" size="100,33" font="Regular;26" halign="right" backgroundColor="metrixBackground" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="752,12" size="320,33" font="Regular;20" halign="right" backgroundColor="metrixBackground" transparent="1" valign="top">
@@ -4795,7 +4795,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap pixmap="MetrixHD/buttons/red.png" position="500,305" size="30,40" alphatest="blend" />
     <widget name="languagetext" position="535,305" size="150,23" font="SetrixHD;21" backgroundColor="metrixBackground" transparent="1" />
     <widget name="text" position="670,120" size="540,300" font="SetrixHD;22" backgroundColor="metrixBackground" transparent="1" />
-    <widget source="list" render="Listbox" position="510,430" size="700,160" zPosition="13" scrollbarMode="showO535,305nDemand" transparent="1">
+    <widget source="list" render="Listbox" position="510,430" size="700,160" zPosition="13" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 2), size = (760, 29), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("SetrixHD", 22)],
@@ -6203,4 +6203,3 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="870,560" zPosition="2" size="350,44" pixmap="MetrixHD/icons/db.png" transparent="1" alphatest="blend" />
   </screen>
 </skin>
-MetrixHD/icons/db.png
