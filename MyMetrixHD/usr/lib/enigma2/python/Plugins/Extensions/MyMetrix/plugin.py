@@ -130,7 +130,11 @@ config.plugins.MyMetrix.EPGStyle = ConfigSelection(default="epg-selection-classi
 config.plugins.MyMetrix.ChannelSelectionStyle = ConfigSelection(default="channel-selection-classic", choices = [
 				("channel-selection-classic", _("Classic")),
 				("channel-selection-new", _("New"))
-				])					
+				])		
+config.plugins.MyMetrix.ScalePicons = ConfigSelection(default="scale-picons-no", choices = [
+				("scale-picons-yes", _("Yes")),
+				("scale-picons-no", _("No"))
+				])
 config.plugins.MyMetrix.InfobarProgressbarStyle = ConfigSelection(default="infobar-classic", choices = [
 				("infobar-classic", _("On")),
 				("infobar-colored", _("Off"))
@@ -299,6 +303,7 @@ class MyMetrix(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("WebradioFS Style"), config.plugins.MyMetrix.WebradioFSStyle))
 		list.append(getConfigListEntry(_("EPG Style"), config.plugins.MyMetrix.EPGStyle))
 		list.append(getConfigListEntry(_("Channel Selection Style"), config.plugins.MyMetrix.ChannelSelectionStyle))
+		list.append(getConfigListEntry(_("Scale Picons"), config.plugins.MyMetrix.ScalePicons))
 		list.append(getConfigListEntry(_("----------------------------- MetrixWeather  --------------------------------"), ))
 		list.append(getConfigListEntry(_("MetrixWeather ID"), config.plugins.MetrixWeather.woeid))
 		list.append(getConfigListEntry(_("Unit"), config.plugins.MetrixWeather.tempUnit))

@@ -1,14 +1,16 @@
 ##
 ## Picon renderer by Gruffy .. some speedups by Ghost
 ## XPicon mod by iMaxxx
+## XPicon mod by Misenko
 ##
 from Renderer import Renderer
 from enigma import ePixmap
 from enigma import iServiceInformation, iPlayableService, iPlayableServicePtr
 from Tools.Directories import fileExists, SCOPE_SKIN_IMAGE, SCOPE_CURRENT_SKIN, resolveFilename
+from Components.config import config
 
 class XPicon(Renderer):
-	searchPaths = ('/media/hdd/XPicons/%s/','/media/usb/XPicons/%s/','/usr/share/enigma2/XPicons/%s/','/usr/share/enigma2/%s/', '/media/usb/%s/')
+	searchPaths = ('/media/hdd/XPicons/%s/','/media/img/XPicons/%s/','/media/usb/XPicons/%s/','/usr/share/enigma2/XPicons/%s/','/usr/share/enigma2/%s/', '/media/usb/%s/')
 
 	def __init__(self):
 		Renderer.__init__(self)
@@ -54,9 +56,15 @@ class XPicon(Renderer):
 							pngname = resolveFilename(SCOPE_SKIN_IMAGE, "skin_default/picon_default.png")
 					self.nameCache["default"] = pngname
 			if self.pngname != pngname:
-				self.instance.setPixmapFromFile(pngname)
+				if pngname:
+					if config.plugins.MyMetrix.ScalePicons.value == "scale-picons-yes":
+						self.instance.setScale(1)
+					self.instance.setPixmapFromFile(pngname)
+					self.instance.show()
+				else:
+					self.instance.hide()
 				self.pngname = pngname
-
+				
 	def findPicon(self, serviceName):
 		for path in self.searchPaths:
 			pngname = (path % self.path) + serviceName + ".png"

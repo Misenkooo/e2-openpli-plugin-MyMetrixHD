@@ -1,13 +1,15 @@
 ##
 ## Picon renderer by Gruffy .. some speedups by Ghost
 ## XPicon mod by iMaxxx
+## XPicon mod by Misenko
 ##
 from Renderer import Renderer
 from enigma import ePixmap, eServiceReference
 from Tools.Directories import fileExists, SCOPE_SKIN_IMAGE, SCOPE_CURRENT_SKIN, resolveFilename
+from Components.config import config
 
 class XPiconChannel(Renderer):
-	searchPaths = ('/media/hdd/XPicons/%s/','/media/usb/XPicons/%s/','/usr/share/enigma2/XPicons/%s/','/usr/share/enigma2/%s/Picon2/', '/media/sde1/%s/Picon2/', '/media/cf/%s/Picon2/', '/media/sdd1/%s/Picon2/', '/media/usb/%s/Picon2/', '/media/ba/%s/Picon2/', '/mnt/ba/%s/Picon2/', '/media/sda/%s/Picon2/', '/etc/%s/Picon2/', '/usr/share/enigma2/%s/', '/media/sde1/%s/', '/media/cf/%s/', '/media/sdd1/%s/', '/media/usb/%s/', '/media/ba/%s/', '/mnt/ba/%s/', '/media/sda/%s/', '/etc/%s/')
+	searchPaths = ('/media/hdd/XPicons/%s/','/media/img/XPicons/%s/','/media/usb/XPicons/%s/','/usr/share/enigma2/XPicons/%s/','/usr/share/enigma2/%s/Picon2/', '/media/sde1/%s/Picon2/', '/media/cf/%s/Picon2/', '/media/sdd1/%s/Picon2/', '/media/usb/%s/Picon2/', '/media/ba/%s/Picon2/', '/mnt/ba/%s/Picon2/', '/media/sda/%s/Picon2/', '/etc/%s/Picon2/', '/usr/share/enigma2/%s/', '/media/cf/%s/', '/media/sdd1/%s/', '/media/usb/%s/', '/media/ba/%s/', '/mnt/ba/%s/', '/media/sda/%s/', '/etc/%s/')
 	
 
 	def __init__(self):
@@ -54,7 +56,7 @@ class XPiconChannel(Renderer):
 						if fileExists(tmp):
 							pngname = tmp
 						else:
-							pngname = resolveFilename(SCOPE_SKIN_IMAGE, "skin_default/bouquet.png")
+							pngname = resolveFilename(SCOPE_CURRENT_SKIN, "skin_default/picon_default.png")
 
 						self.nameCache["bouquet"] = pngname
 				else:
@@ -82,9 +84,15 @@ class XPiconChannel(Renderer):
 					self.nameCache["default"] = pngname
 
 			if self.pngname != pngname:
-				self.instance.setPixmapFromFile(pngname)
+				if pngname:
+					if config.plugins.MyMetrix.ScalePicons.value == "scale-picons-yes":
+						self.instance.setScale(1)
+					self.instance.setPixmapFromFile(pngname)
+					self.instance.show()
+				else:
+					self.instance.hide()
 				self.pngname = pngname
-
+				
 	def findPicon(self, serviceName):
 		print "ActiveXPicon: " + serviceName
 		for path in self.searchPaths:
