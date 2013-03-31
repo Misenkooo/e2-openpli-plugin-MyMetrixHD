@@ -2,19 +2,13 @@
    <widget source="session.Event_Now" render="Label" halign="left" backgroundColor="metrixBackground2" transparent="1" position="83,133" size="535,38" zPosition="2" font="Regular; 26" noWrap="1" valign="center">
      <convert type="EventName">Name</convert>
    </widget>
-   <widget source="session.Event_Now" render="Label" position="82,177" size="535,36" font="Regular; 23" zPosition="1" backgroundColor="metrixBackground" foregroundColor="metrixAccent1" transparent="1" halign="left">
-     <convert type="EventName">Description</convert>
+   <widget source="session.Event_Now" render="Label" position="83,177" size="537,314" font="Regular; 21" zPosition="1" backgroundColor="metrixBackground" transparent="1" halign="left">
+     <convert type="EventName">ExtendedDescription</convert>
    </widget>
    <widget source="session.Event_Next" render="Label" position="640,157" size="560,38" zPosition="2" font="Regular; 26" halign="left" backgroundColor="metrixBackground" transparent="1" valign="bottom">
      <convert type="EventName">Name</convert>
    </widget>
-   <widget source="session.Event_Next" render="Label" position="640,195" size="560,36" zPosition="2" font="Regular; 23" halign="left" backgroundColor="metrixBackground" transparent="1" foregroundColor="metrixAccent1" valign="bottom">
-     <convert type="EventName">Description</convert>
-   </widget>
-   <widget source="session.Event_Now" render="Label" position="82,220" size="537,271" font="Regular; 22" zPosition="1" backgroundColor="metrixBackground" transparent="1" halign="left">
-     <convert type="EventName">ExtendedDescription</convert>
-   </widget>
-   <widget source="session.Event_Next" render="Label" position="640,240" size="560,235" font="Regular; 21" zPosition="1" backgroundColor="metrixBackground" transparent="1">
+   <widget source="session.Event_Next" render="Label" position="640,200" size="560,280" font="Regular; 21" zPosition="1" backgroundColor="metrixBackground" transparent="1">
      <convert type="EventName">ExtendedDescription</convert>
    </widget>
    <eLabel name="NowBG" position="65,128" size="565,376" zPosition="-1" backgroundColor="metrixBackground" />

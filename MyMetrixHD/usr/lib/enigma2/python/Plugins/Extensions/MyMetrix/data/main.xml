@@ -456,11 +456,12 @@
   <screen name="About" position="1,1" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="58,51" zPosition="-11" size="861,595" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
     <widget name="AboutScrollLabel" position="70,61" size="861,595" zPosition="3" font="SetrixHD;28" backgroundColor="background" transparent="1" />
-	<eLabel text="About et9x00 Series" position="20,552" size="1273,296" font="SetrixHD; 150" backgroundColor="metrixPreTrans" transparent="1" foregroundColor="metrixPreTrans" valign="top" zPosition="-20" />
-    <eLabel text="Support for et9x00 " position="70,575" size="700,40" font="SetrixHD; 26" backgroundColor="background" transparent="1" />
-    <eLabel text="www.et-view-support.com" position="69,610" size="700,40" font="SetrixHD; 26" backgroundColor="background" transparent="1" />
-    <eLabel text="skin by iMaxxx" position="961,418" size="270,80" font="SetrixHD; 40" backgroundColor="metrixPreBlack" transparent="1" valign="top" halign="left" />
+	<eLabel text="About OpenPLI" position="20,552" size="1273,296" font="SetrixHD; 150" backgroundColor="metrixPreTrans" transparent="1" foregroundColor="metrixPreTrans" valign="top" zPosition="-20" />
+    <eLabel text="Support " position="70,575" size="700,40" font="SetrixHD; 26" backgroundColor="background" transparent="1" />
+    <eLabel text="http://openpli.org/" position="69,610" size="700,40" font="SetrixHD; 26" backgroundColor="background" transparent="1" />
+    <eLabel text="Skin by iMaxxx" position="961,418" size="270,80" font="SetrixHD; 40" backgroundColor="metrixPreBlack" transparent="1" valign="top" halign="left" />
     <eLabel text="Mod by IPMAN" position="961,468" size="270,80" font="SetrixHD; 40" backgroundColor="metrixPreBlack" transparent="1" valign="top" halign="left" />
+	<eLabel text="&amp; Misenko" position="961,518" size="270,80" font="SetrixHD; 40" backgroundColor="metrixPreBlack" transparent="1" valign="top" halign="left" />
 	<ePixmap position="957,59" size="256,256" zPosition="2" pixmap="MetrixHD/icons/info.png" transparent="1" alphatest="blend" />
     <ePixmap position="540,175" size="310,300" pixmap="MetrixHD/menu/db.png" transparent="1" alphatest="blend" zPosition="-7" />
     <ePixmap position="950,51" zPosition="-1" size="270,270" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="1" />
@@ -476,7 +477,7 @@
     </widget>
     <ePixmap position="950,348" zPosition="-1" size="270,50" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
     <!--ClockWidget */-->
-    <ePixmap position="950,423" zPosition="-1" size="270,100" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
+    <ePixmap position="950,423" zPosition="-1" size="270,150" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
   </screen>
 
   <screen name="AdapterSetup" position="0,0" size="1280,720" title="Network Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -1550,7 +1551,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="config" position="70,115" size="700,510" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" />
     <ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD/icons/net.png" transparent="1" alphatest="blend" />
   </screen>
-  <screen name="NumberZapExt" position="291,75" size="700,165" title="Channel" flags="wfNoBorder">
+  <screen name="NumberZapExt" position="center,center" size="700,165" title="Channel" flags="wfNoBorder">
 	<eLabel position="1,1" zPosition="-1" size="700,164" backgroundColor="metrixBackground" />
 	<eLabel text="QuickZap" position="135,15" size="312,35" zPosition="3" font="SetrixHD;30" />
 	<widget name="chPicon" position="463,21" size="220,132" alphatest="on" transparent="1" />
@@ -3415,46 +3416,43 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <screen name="CoolTVGuide" position="40,25" size="1200,660" zPosition="1" title="Cool TV Guide" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="0,0" zPosition="-10" size="1200,660" pixmap="MetrixHD/back.png" />
-    <eLabel text="Cool TV Guide" position="36,12" size="240,40" font="SetrixHD;28" backgroundColor="black" shadowColor="#000000" halign="left" transparent="1" />
-    <widget source="Title" render="Label" position="250,12" size="240,40" font="SetrixHD;28"  backgroundColor="black" shadowColor="#000000" halign="left" transparent="1" />    
-    <widget source="global.CurrentTime" render="Label" position="1080,7" size="100,33" font="Regular;26" halign="right" backgroundColor="metrixBackground" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="752,12" size="320,33" font="Regular;20" halign="right" backgroundColor="metrixBackground" transparent="1" valign="top">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
-    </widget>
-    <widget name="date" position="1013,49" size="160,28" font="Regular;15" halign="right" backgroundColor="black" transparent="1" />
-    <widget name="timeline_text" position="36,49" size="1140,28" backgroundColor="black" transparent="1" />
-    <widget name="list" position="36,75" size="1140,420" scrollbarMode="showNever" CoolBorderColR="#30000000" CoolBorderColL="#30000000" CoolNowBackCol="#3e3e3e" CoolTVBackCol="#3e3e3e" CoolBackCol="#2c2c2c" CoolNowBackColSel="metrixSelection" CoolTVBackColSel="metrixSelection" CoolBackColSel="metrixSelection" CoolFontCol="#FFFFFF" CoolFontColSel="#FFFFFF" CoolNowFontCol="#FFFFFF" CoolNowFontColSel="#FFFFFF" CoolBackRecColSel="#a90707" CoolBackRecCol="#a90707" transparent="1" />
-    <widget name="timeline0" position="0,140" zPosition="1" size="0,0" pixmap="MetrixHD/timeline-now.png" />
-    <widget name="timeline1" position="0,140" zPosition="1" size="0,0" pixmap="MetrixHD/timeline-now.png" />
-    <widget name="timeline2" position="0,140" zPosition="1" size="0,0" pixmap="MetrixHD/timeline-now.png" />
-    <widget name="timeline3" position="0,140" zPosition="1" size="0,0" pixmap="MetrixHD/timeline-now.png" />
-    <widget name="timeline4" position="0,140" zPosition="1" size="0,0" pixmap="MetrixHD/timeline-now.png" />
-    <widget name="timeline5" position="0,140" zPosition="1" size="0,0" pixmap="MetrixHD/timeline-now.png" />
-    <widget name="timeline_now" position="35,75" zPosition="2" size="14,420" pixmap="MetrixHD/timeline-now.png" alphatest="on" />
-    <widget source="Event" render="Label" position="8,501" size="100,36" font="SetrixHD; 26" backgroundColor="black" shadowColor="#000000" halign="right" transparent="1">
+    
+	<widget source="Event" render="Label" position="25,12" size="100,36" font="Regular; 26" backgroundColor="black" shadowColor="#000000" transparent="1">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText" />
+       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="Event" render="Progress" pixmap="MetrixHD/white-bar.png" position="210,520" size="120,3" borderWidth="0" borderColor="white" zPosition="1" transparent="1">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-    <eLabel name="new eLabel" position="210,521" size="120,1" backgroundColor="white" />
-    <widget source="Event" render="Label" position="115,501" size="100,36" font="SetrixHD; 26" backgroundColor="black" shadowColor="#000000" halign="left" transparent="1">
+	<widget source="Event" render="Label" position="100,12" size="100,36" font="Regular; 26" backgroundColor="black" shadowColor="#000000" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="347,500" size="670,36" font="SetrixHD; 26" backgroundColor="black" transparent="1" halign="left">
+		
+    <widget source="Event" render="Label" position="186,12" size="670,36" font="Regular; 26" backgroundColor="black" transparent="1" halign="left">
       <convert type="EventName">Name</convert>
-    </widget>    
-    <widget source="Event" render="Label" position="1022,500" size="130,30" font="SetrixHD; 26" backgroundColor="black" transparent="1" halign="right">
+    </widget>	  
+	
+    <widget source="global.CurrentTime" render="Label" position="845,12" size="330,32" font="Regular;22" halign="right" backgroundColor="black" transparent="1" valign="top">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y - %H:%M</convert>
+    </widget>  
+   	
+	<widget source="Event" render="Label" position="25,50" zPosition="1" size="1151,72" font="Regular;17" backgroundColor="black" shadowColor="#000000" transparent="1" valign="top">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>	
+  
+	<widget source="Event" render="Label" position="25,127" size="105,28" font="Regular; 20" backgroundColor="black" transparent="1" halign="left">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget> 
-    <widget source="Event" render="Label" position="36,538" zPosition="1" size="1140,74" font="Regular;17" backgroundColor="black" shadowColor="#000000" transparent="1" valign="top">
-      <convert type="EventName">ExtendedDescription</convert>
-    </widget>
+    <widget name="timeline_text" position="29,127" size="1151,28" backgroundColor="black" transparent="1" />
+    <widget name="date" position="1015,135" size="160,28" halign="right" backgroundColor="black" transparent="1" />
+    
+	<widget source="Event" render="Progress" pixmap="MetrixHD/white-bar.png" position="138,160" size="1035,3" borderWidth="0" borderColor="white" zPosition="1" transparent="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>	
+	<eLabel name="new eLabel" position="138,161" size="1035,1" backgroundColor="white" />
+	
+	<widget name="list" position="25,173" size="1151,420" scrollbarMode="showNever" font="Regular; 26" CoolBorderColR="#30000000" CoolBorderColL="#30000000" CoolNowBackCol="#3e3e3e" CoolTVBackCol="#3e3e3e" CoolBackCol="#2c2c2c" CoolNowBackColSel="metrixSelection" CoolTVBackColSel="metrixSelection" CoolBackColSel="metrixSelection" CoolFontCol="#FFFFFF" CoolFontColSel="#FFFFFF" CoolNowFontCol="#FFFFFF" CoolNowFontColSel="#FFFFFF" CoolBackRecColSel="#a90707" CoolBackRecCol="#a90707" transparent="1" />
+    <widget name="timeline_now" position="25,175" zPosition="2" size="14,415" pixmap="MetrixHD/timeline-now.png" alphatest="on" />
+	    
     <ePixmap pixmap="MetrixHD/buttons/red.png" position="5,620" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/green.png" position="265,620" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/yellow.png" position="535,620" size="30,40" alphatest="blend" />
@@ -3463,7 +3461,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="key_green" position="305,627" size="200,25" font="Regular;20" halign="left" valign="top" backgroundColor="black" transparent="1" />
     <widget name="key_yellow" position="575,627" size="200,25" font="Regular;20" halign="left" valign="top" backgroundColor="black" transparent="1" />
     <widget name="key_blue" position="850,627" size="200,25" font="Regular;20" halign="left" valign="top" backgroundColor="black" transparent="1" />
-    <ePixmap position="1088,620" size="81,40" zPosition="10" pixmap="MetrixHD/buttons/key_menu.png" alphatest="blend" />
+    <ePixmap position="1093,620" size="81,40" zPosition="10" pixmap="MetrixHD/buttons/key_menu.png" alphatest="blend" />
   </screen>
   <screen name="CoolChannelGuide" position="40,40" size="1220,650" title="Cool Channel Guide" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="555,0" zPosition="-10" size="650,650" pixmap="MetrixHD/back.png" />
