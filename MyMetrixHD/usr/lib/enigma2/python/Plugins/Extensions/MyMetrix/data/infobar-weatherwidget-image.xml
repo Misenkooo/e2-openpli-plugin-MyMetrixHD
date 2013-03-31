@@ -1,32 +1,32 @@
 <!--/* WEATHER WIDGET -->
-  <widget render="MetrixWeatherUpdater" source="global.CurrentTime" position="33,45" size="10,60" backgroundColor="transparent" foregroundColor="transparent" valign="center" halign="center" font="Meteo; 1" zPosition="10" />
-  <ePixmap position="46,40" size="213,70" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" />
-  <widget source="session.CurrentService" render="Label" position="45,31" size="78,80" font="SetrixHD; 60" zPosition="10" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1">
+  <widget render="MetrixWeatherUpdater" source="global.CurrentTime" position="28,40" size="10,60" backgroundColor="transparent" foregroundColor="transparent" valign="center" halign="center" font="Meteo; 1" zPosition="10" />
+  <ePixmap position="41,40" size="213,70" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" />
+  <widget source="session.CurrentService" render="Label" position="40,31" size="78,80" font="SetrixHD; 60" zPosition="10" halign="right" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1">
     <convert type="MetrixWeather">currentWeatherTemp</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="123,49" size="30,26" font="Regular; 17" zPosition="10" halign="left" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1">
+  <widget source="session.CurrentService" render="Label" position="118,49" size="30,26" font="Regular; 17" zPosition="10" halign="left" valign="center" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1">
     <convert type="MetrixWeather">CF</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="210,50" size="39,26" font="Regular; 16" zPosition="10" halign="right" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1" noWrap="1">
+  <widget source="session.CurrentService" render="Label" position="205,50" size="39,26" font="Regular; 16" zPosition="10" halign="right" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1" noWrap="1">
     <convert type="MetrixWeather">forecastTodayTempMax</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="210,76" size="39,26" font="Regular; 16" zPosition="10" halign="right" valign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="1" noWrap="1">
+  <widget source="session.CurrentService" render="Label" position="205,76" size="39,26" font="Regular; 16" zPosition="10" halign="right" valign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="1" noWrap="1">
     <convert type="MetrixWeather">forecastTodayTempMin</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="265,50" size="50,50" font="Meteo; 45" zPosition="10" halign="left" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1" noWrap="1">
+  <widget source="session.CurrentService" render="Label" position="260,50" size="50,50" font="Meteo; 45" zPosition="10" halign="left" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1" noWrap="1">
     <convert type="MetrixWeather">forecastTomorrowCode</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="317,50" size="39,26" font="Regular; 16" zPosition="10" halign="right" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1" noWrap="1">
+  <widget source="session.CurrentService" render="Label" position="312,50" size="39,26" font="Regular; 16" zPosition="10" halign="right" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1" noWrap="1">
     <convert type="MetrixWeather">forecastTomorrowTempMax</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="317,76" size="39,26" font="Regular; 16" zPosition="10" halign="right" valign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="1" noWrap="1">
+  <widget source="session.CurrentService" render="Label" position="312,76" size="39,26" font="Regular; 16" zPosition="10" halign="right" valign="center" foregroundColor="darkgrey" backgroundColor="background" transparent="1" noWrap="1">
     <convert type="MetrixWeather">forecastTomorrowTempMin</convert>
   </widget>
-  <ePixmap position="259,43" size="105,65" pixmap="MetrixHD/backtransp.png" zPosition="-1" borderWidth="1" borderColor="metrixDeepGrey" />
-  <widget source="session.CurrentService" render="Label" position="156,50" size="50,50" font="Meteo; 45" zPosition="10" halign="left" valign="center" backgroundColor="background" transparent="1" noWrap="1">
+  <ePixmap position="254,43" size="106,65" pixmap="MetrixHD/backtransp.png" zPosition="-1" borderWidth="1" borderColor="metrixDeepGrey" />
+  <widget source="session.CurrentService" render="Label" position="151,50" size="50,50" font="Meteo; 45" zPosition="10" halign="left" valign="center" backgroundColor="background" transparent="1" noWrap="1">
     <convert type="MetrixWeather">forecastTodayCode</convert>
   </widget>
-  <widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD/icons/ico_rec_on.png" position="62,133" size="74,23" zPosition="2" alphatest="blend">
+  <widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD/icons/ico_rec_on.png" position="57,133" size="74,23" zPosition="2" alphatest="blend">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
 <!-- WEATHER WIDGET */-->

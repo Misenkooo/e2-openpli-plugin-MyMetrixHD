@@ -457,9 +457,10 @@
     <ePixmap position="58,51" zPosition="-11" size="861,595" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
     <widget name="AboutScrollLabel" position="70,75" size="861,595" zPosition="3" font="SetrixHD;25" backgroundColor="background" transparent="1" />
 	<eLabel text="About OpenPLi" position="20,552" size="1273,296" font="SetrixHD; 150" backgroundColor="metrixPreTrans" transparent="1" foregroundColor="metrixPreTrans" valign="top" zPosition="-20" />
-    <eLabel text="Skin by iMaxxx" position="961,418" size="270,80" font="SetrixHD; 40" backgroundColor="metrixPreBlack" transparent="1" valign="top" halign="left" />
-    <eLabel text="Mod by IPMAN" position="961,468" size="270,80" font="SetrixHD; 40" backgroundColor="metrixPreBlack" transparent="1" valign="top" halign="left" />
-	<eLabel text="&amp; Misenko" position="961,518" size="270,80" font="SetrixHD; 40" backgroundColor="metrixPreBlack" transparent="1" valign="top" halign="left" />
+    <eLabel text="Skin by iMaxxx" position="962,428" size="270,80" font="SetrixHD; 40" backgroundColor="metrixPreBlack" transparent="1" valign="top" halign="left" />
+    <eLabel text="Mod by IPMAN" position="957,488" size="270,80" font="SetrixHD; 40" backgroundColor="metrixPreBlack" transparent="1" valign="top" halign="left" />
+	<eLabel text="&amp;" position="1080,538" size="270,80" font="SetrixHD; 40" backgroundColor="metrixPreBlack" transparent="1" valign="top" halign="left" />
+	<eLabel text="Misenko" position="1025,585" size="270,80" font="SetrixHD; 40" backgroundColor="metrixPreBlack" transparent="1" valign="top" halign="left" />
 	<eLabel text="http://openpli.org/" position="69,610" size="700,40" font="SetrixHD; 25" backgroundColor="background" transparent="1" />
 	<ePixmap position="957,59" size="256,256" zPosition="2" pixmap="MetrixHD/icons/info.png" transparent="1" alphatest="blend" />
     <ePixmap position="400,120" size="495,585" pixmap="MetrixHD/menu/db.png" transparent="1" alphatest="blend" zPosition="-7" />
@@ -476,7 +477,7 @@
     </widget>
     <ePixmap position="950,348" zPosition="-1" size="270,50" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
     <!--ClockWidget */-->
-    <ePixmap position="950,423" zPosition="-1" size="270,150" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
+    <ePixmap position="950,423" zPosition="-1" size="270,223" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
   </screen>
   <screen name="AdapterSetup" position="0,0" size="1280,720" title="Network Setup" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="40,25" zPosition="-10" size="1205,650" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
@@ -1551,14 +1552,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <screen name="NumberZapExt" position="center,center" size="700,165" title="Channel" flags="wfNoBorder">
 	<eLabel position="1,1" zPosition="-1" size="700,164" backgroundColor="metrixBackground" />
-	<eLabel text="QuickZap" position="135,15" size="312,35" zPosition="3" font="SetrixHD;30" />
-	<widget name="chPicon" position="463,21" size="220,132" alphatest="on" transparent="1" />
-	<widget name="number" position="24,72" size="122,27" halign="left" font="Regular; 20" transparent="1" />
-	<widget name="chNum" position="146,72" size="240,27" halign="left" font="Regular; 20" transparent="1" />
-	<widget name="channel" position="24,99" size="122,26" halign="left" font="Regular; 20" transparent="1" />
-	<widget name="chName" position="146,99" size="308,26" halign="left" font="Regular; 20" noWrap="1" transparent="1" />
-	<widget name="bouquet" position="24,125" size="122,26" halign="left" font="Regular; 20" transparent="1" />
-	<widget name="chBouq" position="146,125" size="308,26" halign="left" font="Regular; 20" noWrap="1" transparent="1" />
+	<widget name="chPicon" position="463,20" size="220,132" alphatest="on" transparent="1" />
+	<widget name="number" position="24,30" size="122,37" halign="left" font="Regular; 26" transparent="1" />
+	<widget name="chNum" position="146,30" size="240,37" halign="left" font="Regular; 26" transparent="1" />
+	<widget name="channel" position="24,65" size="122,36" halign="left" font="Regular; 26" transparent="1" />
+	<widget name="chName" position="146,65" size="308,36" halign="left" font="Regular; 26" noWrap="1" transparent="1" />
+	<widget name="bouquet" position="24,99" size="122,36" halign="left" font="Regular; 26" transparent="1" />
+	<widget name="chBouq" position="146,99" size="308,36" halign="left" font="Regular; 26" noWrap="1" transparent="1" />
 	<eLabel position="458,1" size="1,163" backgroundColor="metrixBackground" />
   </screen>
   <screen name="NumberZap" position="center,center" size="275,60" title="QuickZap" flags="wfNoBorder" backgroundColor="metrixBackground">

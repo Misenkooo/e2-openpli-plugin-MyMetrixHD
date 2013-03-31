@@ -8,6 +8,6 @@
     <widget source="global.CurrentTime" render="Label" position="944,46" size="125,30" zPosition="10" font="Regular; 18" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixForeground" transparent="1">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="session.CurrentService" render="ChannelNumber" zPosition="10" position="855,31" size="169,80" font="SetrixHD; 60" halign="center" backgroundColor="metrixBackground2" foregroundColor="metrixForeground" transparent="1" valign="center"/>
-     <ePixmap position="898,40" size="335,70"  pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" />
+    <widget source="session.CurrentService" render="ChannelNumber" zPosition="10" position="840,31" size="169,80" font="SetrixHD; 60" halign="center" backgroundColor="metrixBackground2" foregroundColor="metrixForeground" transparent="1" valign="center"/>
+    <ePixmap position="863,40" size="370,70"  pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" />
 <!--ClockWidget */-->
