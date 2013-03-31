@@ -2136,16 +2136,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="timerlist" position="70,115" size="700,500" scrollbarMode="showOnDemand" transparent="1" />
     <ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD/icons/timer.png" transparent="1" alphatest="blend" />
   </screen>
-  <screen name="TimeshiftState" position="center,508" zPosition="2" size="860,52" backgroundColor="transpBlack" flags="wfNoBorder">
-    <widget name="state" position="10,5" size="150,27" font="Regular; 20" halign="center" backgroundColor="transpBlack" />
-    <widget source="session.CurrentService" render="Label" position="160, 5" size="150,27" font="Regular; 20" halign="left" foregroundColor="metrixForeground" backgroundColor="transpBlack">
+  <screen name="TimeshiftState" position="center,508" zPosition="2" size="860,52" backgroundColor="metrixBackground" flags="wfNoBorder">
+    <widget name="state" position="10,5" size="150,27" font="Regular; 20" halign="center" backgroundColor="metrixBackground" />
+    <widget source="session.CurrentService" render="Label" position="160, 5" size="150,27" font="Regular; 20" halign="left" foregroundColor="metrixForeground" backgroundColor="metrixBackground">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="650, 5" size=" 80,27" font="Regular; 20" halign="right" foregroundColor="metrixForeground" backgroundColor="transpBlack">
+    <widget source="session.CurrentService" render="Label" position="650, 5" size=" 80,27" font="Regular; 20" halign="right" foregroundColor="metrixForeground" backgroundColor="metrixBackground">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <eLabel text="/" position="740, 5" size=" 10,27" font="Regular; 20" halign="center" foregroundColor="metrixForeground" backgroundColor="transpBlack" />
-    <widget source="session.CurrentService" render="Label" position="760, 5" size="80,27" font="Regular; 20" halign="left" foregroundColor="metrixForeground" backgroundColor="transpBlack">
+    <eLabel text="/" position="740, 5" size=" 10,27" font="Regular; 20" halign="center" foregroundColor="metrixForeground" backgroundColor="metrixBackground" />
+    <widget source="session.CurrentService" render="Label" position="760, 5" size="80,27" font="Regular; 20" halign="left" foregroundColor="metrixForeground" backgroundColor="metrixBackground">
       <convert type="ServicePosition">Length</convert>
     </widget>
     <widget source="session.CurrentService" render="Progress" position="10,42" size="840,5" zPosition="5" transparent="1">

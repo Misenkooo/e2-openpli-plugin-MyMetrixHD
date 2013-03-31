@@ -151,7 +151,7 @@ config.plugins.MyMetrix.InfobarClockWidget = ConfigSelection(default="infobar-cl
 config.plugins.MyMetrix.InfobarInfoWidget = ConfigSelection(default="infobar-infowidget-none", choices = [
 				("infobar-infowidget-provider", _("Show Provider")),
 				("infobar-infowidget-cam", _("Show Provider and CAM/ECM")),
-				("infobar-infowidget-provider-frequenzy", _("Show Provider and Frequenzy")),
+				("infobar-infowidget-provider-frequenzy", _("Show Provider and Frequency")),
 				("infobar-infowidget-none", _("Off"))
 				])
 config.plugins.MyMetrix.InfobarTunerInfo = ConfigSelection(default="infobar-tunerinfo-ab", choices = [

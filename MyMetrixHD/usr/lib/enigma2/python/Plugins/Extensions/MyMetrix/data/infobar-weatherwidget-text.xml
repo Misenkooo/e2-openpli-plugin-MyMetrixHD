@@ -20,7 +20,7 @@
     <convert type="MetrixWeather">forecastTomorrowTempMin</convert>
   </widget>
   <ePixmap position="254,43" size="106,65" pixmap="MetrixHD/backtransp.png" />
-  <widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD/icons/ico_rec_on.png" position="57,133" size="74,23" zPosition="2" alphatest="blend">
+  <widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD/icons/ico_rec_on.png" position="1159,122" size="74,23" zPosition="50" alphatest="blend">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
 <!-- WEATHER WIDGET */-->

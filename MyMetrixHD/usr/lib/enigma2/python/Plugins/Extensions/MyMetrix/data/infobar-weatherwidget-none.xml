@@ -1,5 +1,5 @@
 <!-- /* WeatherWidget -->
-  <widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD/icons/ico_rec_on.png" position="56,40" size="74,23" zPosition="2" alphatest="blend">
+  <widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD/icons/ico_rec_on.png" position="1159,122" size="74,23" zPosition="50" alphatest="blend">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
 <!--WeatherWidget */-->

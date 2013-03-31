@@ -26,7 +26,7 @@
   <widget source="session.CurrentService" render="Label" position="151,50" size="50,50" font="Meteo; 45" zPosition="10" halign="left" valign="center" backgroundColor="background" transparent="1" noWrap="1">
     <convert type="MetrixWeather">forecastTodayCode</convert>
   </widget>
-  <widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD/icons/ico_rec_on.png" position="57,133" size="74,23" zPosition="2" alphatest="blend">
+  <widget source="session.RecordState" render="Pixmap" pixmap="MetrixHD/icons/ico_rec_on.png" position="1159,122" size="74,23" zPosition="50" alphatest="blend">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
 <!-- WEATHER WIDGET */-->

@@ -15,5 +15,5 @@
     </widget>
     <eLabel position="309,542" size="250,1" backgroundColor="transpWhite" />
     <eLabel position="709,542" size="250,1" backgroundColor="transpWhite" />
-    <eLabel name="HealthWidgetBG" position="214,525" size="850,35" backgroundColor="metrixBackground2" zPosition="-20" />
+    <eLabel name="HealthWidgetBG" position="214,525" size="850,35" backgroundColor="metrixBackground" zPosition="-20" />
 <!-- HEALTH WIDGET */ -->

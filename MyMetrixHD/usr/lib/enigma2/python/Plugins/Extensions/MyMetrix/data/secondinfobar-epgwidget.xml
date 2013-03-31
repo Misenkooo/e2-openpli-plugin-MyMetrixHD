@@ -1,16 +1,16 @@
 <!-- /* EPGWidget -->
-   <widget source="session.Event_Now" render="Label" halign="left" backgroundColor="metrixBackground2" transparent="1" position="83,133" size="535,38" zPosition="2" font="Regular; 26" noWrap="1" valign="center">
+   <widget source="session.Event_Now" render="Label" position="83,133" size="535,38" halign="left" backgroundColor="metrixBackground" transparent="1" zPosition="2" font="Regular; 26" noWrap="1" valign="center">
      <convert type="EventName">Name</convert>
    </widget>
-   <widget source="session.Event_Now" render="Label" position="83,177" size="537,314" font="Regular; 21" zPosition="1" backgroundColor="metrixBackground" transparent="1" halign="left">
+   <widget source="session.Event_Now" render="Label" position="83,177" size="537,322" font="Regular; 21" zPosition="1" backgroundColor="metrixBackground" transparent="1" halign="left">
      <convert type="EventName">ExtendedDescription</convert>
    </widget>
-   <widget source="session.Event_Next" render="Label" position="640,157" size="560,38" zPosition="2" font="Regular; 26" halign="left" backgroundColor="metrixBackground" transparent="1" valign="bottom">
+   <widget source="session.Event_Next" render="Label" position="640,156" size="560,38" halign="left" backgroundColor="metrixBackground" transparent="1"  zPosition="2" font="Regular; 26" noWrap="1" valign="center">
      <convert type="EventName">Name</convert>
    </widget>
-   <widget source="session.Event_Next" render="Label" position="640,200" size="560,280" font="Regular; 21" zPosition="1" backgroundColor="metrixBackground" transparent="1">
+   <widget source="session.Event_Next" render="Label" position="640,200" size="560,264" font="Regular; 21" zPosition="1" backgroundColor="metrixBackground" transparent="1" halign="left">
      <convert type="EventName">ExtendedDescription</convert>
    </widget>
    <eLabel name="NowBG" position="65,128" size="565,376" zPosition="-1" backgroundColor="metrixBackground" />
-   <eLabel name="NextBG" position="630,154" size="585,329" backgroundColor="metrixBackground2" />
+   <eLabel name="NextBG" position="630,157" size="585,318" backgroundColor="metrixBackground" />
 <!-- EPGWidget */-->

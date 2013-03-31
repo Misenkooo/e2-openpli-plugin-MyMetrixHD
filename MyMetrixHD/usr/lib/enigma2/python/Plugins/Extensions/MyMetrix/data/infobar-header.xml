@@ -1,23 +1,23 @@
 <!--* Infobar Header -->
 <screen name="InfoBar" position="0,0" size="1283,723" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap pixmap="MetrixHD/icons/ico_hbbtv_off.png" position="907,668" size="64,24" zPosition="1" alphatest="blend"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD/icons/ico_hbbtv_on.png" position="907,668" size="64,24" zPosition="2" alphatest="blend" >
+    <ePixmap pixmap="MetrixHD/icons/ico_hbbtv_off.png" position="867,668" size="64,24" zPosition="1" alphatest="blend"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD/icons/ico_hbbtv_on.png" position="867,668" size="64,24" zPosition="2" alphatest="blend" >
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="MetrixHD/icons/ico_dolby_off.png" position="1020,670" size="64,23" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD//icons/ico_dolby_on.png" position="1020,670" size="64,23" zPosition="2" alphatest="blend">
-      <convert type="ServiceInfo">IsMultichannel</convert>
+    <ePixmap pixmap="MetrixHD/icons/subtitle_off.png" position="941,670" size="30,22" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD/icons/subtitle_on.png" position="941,670" zPosition="1" size="30,22" alphatest="blend">
+      <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="MetrixHD/icons/ico_format_off.png" position="1156,668" size="41,26" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD/icons/ico_format_on.png" position="1156,668" size="41,26" zPosition="2" alphatest="blend">
-      <convert type="ServiceInfo">IsWidescreen</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap pixmap="MetrixHD/icons/ico_txt_off.png" position="981,669" size="28,24" zPosition="1" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD/icons/ico_txt_on.png" position="981,669" size="28,24" zPosition="2" alphatest="blend">
+	<ePixmap pixmap="MetrixHD/icons/ico_txt_off.png" position="981,669" size="28,24" zPosition="1" alphatest="blend" />
+	<widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD/icons/ico_txt_on.png" position="981,669" size="28,24" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">HasTelext</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="MetrixHD/icons/ico_dolby_off.png" position="1020,670" size="64,23" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD/icons/ico_dolby_on.png" position="1020,670" size="64,23" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <ePixmap pixmap="MetrixHD/icons/ico_hd_off.png" position="1095,670" size="49,24" zPosition="1" alphatest="blend" />
@@ -26,14 +26,14 @@
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
+	<ePixmap pixmap="MetrixHD/icons/ico_format_off.png" position="1156,668" size="41,26" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD/icons/ico_format_on.png" position="1156,668" size="41,26" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
     <ePixmap pixmap="MetrixHD/icons/ico_crypt_off.png" position="1209,668" size="27,25" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD/icons/ico_crypt_on.png" position="1209,668" size="27,25" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">IsCrypted</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap pixmap="MetrixHD/icons/subtitle_off.png" position="867,671" size="30,22" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD/icons/subtitle_on.png" position="867,671" zPosition="1" size="30,22" alphatest="blend">
-      <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel position="-1,560" size="1283,160" backgroundColor="metrixBackground" zPosition="-10" name="InfoBar" />
