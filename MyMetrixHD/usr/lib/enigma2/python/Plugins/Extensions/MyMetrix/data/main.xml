@@ -3426,7 +3426,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
 		
-    <widget source="Event" render="Label" position="186,12" size="670,36" font="Regular; 26" backgroundColor="black" transparent="1" halign="left">
+    <widget source="Event" render="Label" position="195,12" size="670,36" font="Regular; 26" backgroundColor="black" transparent="1" halign="left">
       <convert type="EventName">Name</convert>
     </widget>	  
 	
