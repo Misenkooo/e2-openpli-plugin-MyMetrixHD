@@ -1358,7 +1358,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap position="51,51" zPosition="-10" size="390,525" pixmap="MetrixHD/back.png" />
     <eLabel text="Select a movie" position="10,562" size="1273,296" font="SetrixHD; 145" backgroundColor="metrixPreTrans2" transparent="1" foregroundColor="metrixPreTrans2" valign="top" zPosition="-20" />
     <widget source="Title" render="Label" position="491,50" size="760,45" font="SetrixHD; 29" backgroundColor="metrixBackground" transparent="1" />
-    <widget name="list" position="490,118" size="710,455" scrollbarMode="showOnDemand" itemHeight="40" transparent="1" />
+    <widget name="list" position="490,118" size="710,455" scrollbarMode="showOnDemand" fontName="SetrixHD" itemHeights="76,53,33" fontSizesOriginal="24,18,18" fontSizesCompact="24,18" fontSizesMinimal="25,20" transparent="1" />
     <widget name="freeDiskSpace" position="491,584" size="700,35" font="SetrixHD;25" valign="center" backgroundColor="metrixBackground" transparent="1" />
     <widget source="Service" render="Label" position="61,50" size="369,34" font="Regular; 21" backgroundColor="metrixBackground" transparent="1">
       <convert type="MovieInfo">RecordServiceName</convert>
@@ -1379,10 +1379,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap pixmap="MetrixHD/buttons/green.png" position="597,630" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/yellow.png" position="771,630" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/blue.png" position="941,630" size="30,40" alphatest="blend" />
-    <widget name="key_red" position="503,635" size="140,24" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
-    <widget name="key_green" position="637,635" size="130,24" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
-    <widget name="key_yellow" position="810,635" size="140,24" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
-    <widget name="key_blue" position="981,635" size="130,24" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_red" position="503,633" size="140,28" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_green" position="637,633" size="130,28" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_yellow" position="810,633" size="140,28" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_blue" position="981,633" size="130,28" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
     <!--Button */-->
     <widget name="waitingtext" position="0,0" size="0,0" />
     <ePixmap position="467,52" zPosition="-10" size="810,619" pixmap="MetrixHD/back.png" />
