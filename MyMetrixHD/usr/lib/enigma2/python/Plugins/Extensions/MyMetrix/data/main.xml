@@ -1552,13 +1552,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <screen name="NumberZapExt" position="center,center" size="700,165" title="Channel" flags="wfNoBorder">
 	<eLabel position="1,1" zPosition="-1" size="700,164" backgroundColor="metrixBackground" />
-	<widget name="chPicon" position="463,20" size="220,132" alphatest="on" transparent="1" />
-	<widget name="number" position="24,30" size="122,37" halign="left" font="Regular; 26" transparent="1" />
-	<widget name="chNum" position="146,30" size="240,37" halign="left" font="Regular; 26" transparent="1" />
-	<widget name="channel" position="24,65" size="122,36" halign="left" font="Regular; 26" transparent="1" />
-	<widget name="chName" position="146,65" size="308,36" halign="left" font="Regular; 26" noWrap="1" transparent="1" />
-	<widget name="bouquet" position="24,99" size="122,36" halign="left" font="Regular; 26" transparent="1" />
-	<widget name="chBouq" position="146,99" size="308,36" halign="left" font="Regular; 26" noWrap="1" transparent="1" />
+	<widget name="chPicon" position="463,17" size="220,132" alphatest="blend" transparent="1" />
+	<widget name="number" position="24,11" size="122,37" halign="left" font="Regular; 28" transparent="1" />
+	<widget name="chNum" position="146,11" size="240,37" halign="left" font="Regular; 28" transparent="1" />
+	<widget name="channel" position="24,61" size="122,36" halign="left" font="Regular; 28" transparent="1" />
+	<widget name="chName" position="146,61" size="308,36" halign="left" font="Regular; 28" noWrap="1" transparent="1" />
+	<widget name="bouquet" position="24,110" size="122,36" halign="left" font="Regular; 28" transparent="1" />
+	<widget name="chBouq" position="146,110" size="308,36" halign="left" font="Regular; 28" noWrap="1" transparent="1" />
 	<eLabel position="458,1" size="1,163" backgroundColor="metrixBackground" />
   </screen>
   <screen name="NumberZap" position="center,center" size="275,60" title="QuickZap" flags="wfNoBorder" backgroundColor="metrixBackground">
