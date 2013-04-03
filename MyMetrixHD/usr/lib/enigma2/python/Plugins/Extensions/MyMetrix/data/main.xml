@@ -1355,22 +1355,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     </widget>
   </screen>
   <screen name="MovieSelection" position="0,0" size="1280,720" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap position="51,51" zPosition="-10" size="390,525" pixmap="MetrixHD/back.png" />
+    <ePixmap position="51,36" zPosition="-10" size="390,557" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
     <eLabel text="Select a movie" position="10,562" size="1273,296" font="SetrixHD; 145" backgroundColor="metrixPreTrans2" transparent="1" foregroundColor="metrixPreTrans2" valign="top" zPosition="-20" />
-    <widget source="Title" render="Label" position="491,50" size="760,45" font="SetrixHD; 29" backgroundColor="metrixBackground" transparent="1" />
-    <widget name="list" position="490,118" size="710,455" scrollbarMode="showOnDemand" fontName="SetrixHD" itemHeights="76,53,33" fontSizesOriginal="24,18,18" fontSizesCompact="24,18" fontSizesMinimal="25,20" transparent="1" />
-    <widget name="freeDiskSpace" position="491,584" size="700,35" font="SetrixHD;25" valign="center" backgroundColor="metrixBackground" transparent="1" />
-    <widget source="Service" render="Label" position="61,50" size="369,34" font="Regular; 21" backgroundColor="metrixBackground" transparent="1">
-      <convert type="MovieInfo">RecordServiceName</convert>
+    <widget name="list" position="453,54" size="780,486" scrollbarMode="showOnDemand" fontName="SetrixHD" itemHeights="99,70,40" fontSizesOriginal="26,20,20" fontSizesCompact="26,20" fontSizesMinimal="25,20" transparent="1" />
+    <widget name="freeDiskSpace" position="453,584" size="700,35" font="SetrixHD;25" valign="center" backgroundColor="metrixBackground" transparent="1" />
+    <widget source="Service" render="XPicon" position="139,43" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+      <convert type="MetrixMovieInfo">RecordServiceName</convert>
     </widget>
-    <widget source="Service" render="Label" position="64,543" size=" 80, 34" font="SetrixHD;25" halign="left" backgroundColor="metrixBackground" transparent="1">
+    <widget source="Service" render="Label" position="64,558" size=" 80, 34" font="SetrixHD;25" halign="left" backgroundColor="metrixBackground" transparent="1">
       <convert type="ServiceTime">Duration</convert>
       <convert type="ClockToText">AsLength</convert>
     </widget>
-    <widget source="Service" render="Label" position="280,543" size="150, 34" font="SetrixHD;25" halign="right" backgroundColor="metrixBackground" transparent="1">
+    <widget source="Service" render="Label" position="280,558" size="150, 34" font="SetrixHD;25" halign="right" backgroundColor="metrixBackground" transparent="1">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget source="Service" render="Label" position="64,84" size="367,459" font="Regular; 21" foregroundColor="metrixAccent1" backgroundColor="#32000000" transparent="1" valign="top" options="movetype=running,direction=top,step=1,steptime=100,oneshot=5000,wrap">
+    <widget source="Service" render="Label" position="62,187" size="367,353" font="Regular; 21" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" transparent="1" valign="top" >
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!-- /*Buttons-->
@@ -1385,7 +1384,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="key_blue" position="981,633" size="130,28" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
     <!--Button */-->
     <widget name="waitingtext" position="0,0" size="0,0" />
-    <ePixmap position="467,52" zPosition="-10" size="810,619" pixmap="MetrixHD/back.png" />
+    <ePixmap position="448,36" zPosition="-10" size="790,634" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
     <!-- /*ClockWidget-->
     <widget source="global.CurrentTime" render="Label" position="289,590" size="169,80" font="SetrixHD; 60" halign="left" backgroundColor="metrixBackground2" transparent="1" valign="top">
       <convert type="ClockToText">Default</convert>
