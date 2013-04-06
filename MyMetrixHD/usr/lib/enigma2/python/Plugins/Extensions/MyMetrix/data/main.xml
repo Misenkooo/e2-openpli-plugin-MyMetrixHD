@@ -981,16 +981,10 @@
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <eLabel position="146,145" size="990,1" backgroundColor="metrixAccent1" />
-    <widget name="timeline_text" position="0,290" size="1280,25" selectionDisabled="1" transparent="1" />
+    <widget name="timeline_text" position="70,290" size="1160,25" selectionDisabled="1" backgroundColor="metrixBackground" transparent="1" />
     <eLabel position="70,320" size="1160,2" backgroundColor="metrixAccent1" />
     <widget name="list" position="70,330" size="1160,295" itemHeight="60" EntryBorderColor="metrixForeground" EntryBackgroundColor="metrixBackground" EntryBackgroundColorSelected="metrixAccent1" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="timeline0" position="0,398" zPosition="1" size="1,230" pixmap="MetrixHD/timeline.png" />
-    <widget name="timeline1" position="0,398" zPosition="1" size="1,230" pixmap="MetrixHD/timeline.png" />
-    <widget name="timeline2" position="0,398" zPosition="1" size="1,230" pixmap="MetrixHD/timeline.png" />
-    <widget name="timeline3" position="0,398" zPosition="1" size="1,230" pixmap="MetrixHD/timeline.png" />
-    <widget name="timeline4" position="0,398" zPosition="1" size="1,230" pixmap="MetrixHD/timeline.png" />
-    <widget name="timeline5" position="0,398" zPosition="1" size="1,230" pixmap="MetrixHD/timeline.png" />
-    <widget name="timeline_now" position="0,330" zPosition="2" size="19,295" pixmap="MetrixHD/timeline-now.png" alphatest="blend" />
+    <widget name="timeline_now" position="0,330" zPosition="2" size="10,295" pixmap="MetrixHD/timeline-now.png" transparent="1" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_red.png" position="70,635" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_green.png" position="265,635" size="30,40" alphatest="blend" />
     <widget name="key_red" position="105,637" size="160,25" zPosition="1" font="SetrixHD;22" halign="left" backgroundColor="metrixBackground" transparent="1" />
