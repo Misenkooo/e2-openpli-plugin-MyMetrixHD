@@ -8,8 +8,7 @@
     </widget>
     <widget source="ServiceEvent" render="Label" position="45,263" size="64,24" font="SetrixHD; 21" backgroundColor="metrixBackground2" transparent="1" halign="right">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">
-      </convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="330,263" size="77,24" font="SetrixHD; 21" backgroundColor="metrixBackground2" transparent="1">
       <convert type="EventTime">EndTime</convert>

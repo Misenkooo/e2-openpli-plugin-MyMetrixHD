@@ -1,6 +1,6 @@
 <!-- /* STYLE NEW -->
   <eLabel name="new eLabel" position="288,615" size="950,1" backgroundColor="metrixAccent1" />
-  <widget source="session.CurrentService" render="XPicon" position="40,570" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+  <widget source="session.CurrentService" render="XPicon" position="40,574" zPosition="4" size="220,132" transparent="1" alphatest="blend">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget source="session.Event_Now" render="Label" position="1091,563" size="75,30" font="Regular; 19" halign="right" backgroundColor="metrixBackground" transparent="1">
