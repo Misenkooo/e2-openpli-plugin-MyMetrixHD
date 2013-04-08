@@ -1,9 +1,9 @@
 <!--* ChannelSelection New -->
-<screen name="ChannelSelection" position="1,center" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap position="51,41" zPosition="-10" size="340,649" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" />
+ <screen name="ChannelSelection" position="1,center" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap position="51,31" zPosition="-10" size="340,659" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" />
     <eLabel position="117,277" size="206,1" backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" />
-    <widget name="list" position="401,43" size="825,400" scrollbarMode="showNever" colorServiceDescription="metrixAccent2" colorServiceDescriptionSelected="metrixForeground" colorEventProgressbar="metrixSelection" colorEventProgressbarSelected="metrixForeground" colorEventProgressbarBorder="metrixSelection" colorEventProgressbarBorderSelected="metrixForeground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="33" serviceNumberFont="SetrixHD;28" serviceNameFont="SetrixHD;28"  serviceInfoFont="Regular;22" transparent="1" backgroundColor="metrixBackground" itemHeight="50" />
-    <widget source="ServiceEvent" render="Label" position="62,185" size="320,80" zPosition="6" font="SetrixHD; 28" backgroundColor="metrixBackground2" transparent="1" halign="left" valign="center">
+    <widget name="list" position="401,35" size="825,408" scrollbarMode="showNever" colorServiceDescription="white" foregroundColor="metrixAccent1" foregroundColorSelected="metrixAccent1" colorServiceDescriptionSelected="white" colorEventProgressbar="metrixSelection" colorEventProgressbarSelected="metrixForeground" colorEventProgressbarBorder="metrixSelection" colorEventProgressbarBorderSelected="metrixForeground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="34" serviceNumberFont="SetrixHD;31" serviceNameFont="SetrixHD;31"  serviceInfoFont="Regular;24" transparent="1" backgroundColor="metrixBackground" itemHeight="50" />
+    <widget source="ServiceEvent" render="Label" position="62,179" size="320,80" zPosition="6" font="SetrixHD; 30" backgroundColor="metrixBackground2" transparent="1" halign="left" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="45,263" size="64,24" font="SetrixHD; 21" backgroundColor="metrixBackground2" transparent="1" halign="right">
@@ -18,31 +18,31 @@
     <widget source="ServiceEvent" render="Progress" position="117,275" size="206,5" borderWidth="0" backgroundColor="metrixForeground" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="63,295" size="320,300" font="Regular; 20" foregroundColor="metrixAccent1" backgroundColor="metrixBackground2" transparent="1" valign="top">
+    <widget source="ServiceEvent" render="Label" position="63,295" size="320,306" font="Regular; 22" foregroundColor="metrixAccent1" backgroundColor="metrixBackground2" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-	<widget source="ServiceEvent" render="Label" position="420,465" size="690,35" font="Regular;22" foregroundColor="#696969" backgroundColor="metrixBackground" zPosition="5" noWrap="1" transparent="1" >
+	<widget source="ServiceEvent" render="Label" position="420,460" size="690,35" font="Regular;24" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" zPosition="5" noWrap="1" transparent="1" >
       <convert type="MetrixNextEvents">Event1,noDuration</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="1100,465" size="95,35" font="Regular;22"  foregroundColor="#696969" backgroundColor="metrixBackground" zPosition="5" halign="right" noWrap="1" transparent="1" >
+    <widget source="ServiceEvent" render="Label" position="1100,460" size="95,35" font="Regular;24"  foregroundColor="metrixAccent1" backgroundColor="metrixBackground" zPosition="5" halign="right" noWrap="1" transparent="1" >
       <convert type="MetrixNextEvents">Event1,onlyDuration</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="420,506" size="690,35" font="Regular;22" foregroundColor="#696969" backgroundColor="metrixBackground" zPosition="5" noWrap="1" transparent="1" >
+    <widget source="ServiceEvent" render="Label" position="420,501" size="690,35" font="Regular;24" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" zPosition="5" noWrap="1" transparent="1" >
       <convert type="MetrixNextEvents">Event2,noDuration</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="1100,506" size="95,35" font="Regular;22"  foregroundColor="#696969" backgroundColor="metrixBackground" zPosition="5" halign="right" noWrap="1" transparent="1" >
+    <widget source="ServiceEvent" render="Label" position="1100,501" size="95,35" font="Regular;24"  foregroundColor="metrixAccent1" backgroundColor="metrixBackground" zPosition="5" halign="right" noWrap="1" transparent="1" >
       <convert type="MetrixNextEvents">Event2,onlyDuration</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="420,547" size="690,35" font="Regular;22"  foregroundColor="#696969" backgroundColor="metrixBackground" zPosition="5" noWrap="1" transparent="1" >
+    <widget source="ServiceEvent" render="Label" position="420,542" size="690,35" font="Regular;24"  foregroundColor="metrixAccent1" backgroundColor="metrixBackground" zPosition="5" noWrap="1" transparent="1" >
       <convert type="MetrixNextEvents">Event3,noDuration</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="1100,547" size="95,35" font="Regular;22" foregroundColor="#696969" backgroundColor="metrixBackground" zPosition="5" halign="right" noWrap="1" transparent="1" >
+    <widget source="ServiceEvent" render="Label" position="1100,542" size="95,35" font="Regular;24" foregroundColor="metrixAccent1" backgroundColor="metrixBackground" zPosition="5" halign="right" noWrap="1" transparent="1" >
       <convert type="MetrixNextEvents">Event3,onlyDuration</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="420,588" size="690,35" font="Regular;22"  foregroundColor="metrixAccent1" backgroundColor="metrixBackground" zPosition="5" noWrap="1" transparent="1" >
+    <widget source="ServiceEvent" render="Label" position="420,593" size="690,35" font="Regular;24"  foregroundColor="white" backgroundColor="metrixBackground" zPosition="5" noWrap="1" transparent="1" >
       <convert type="MetrixNextEvents">PrimeTime,noDuration</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="1100,588" size="95,35" font="Regular;22"  foregroundColor="metrixAccent1" backgroundColor="metrixBackground2" zPosition="5" halign="right" transparent="1" >
+    <widget source="ServiceEvent" render="Label" position="1100,593" size="95,35" font="Regular;24"  foregroundColor="white" backgroundColor="metrixBackground2" zPosition="5" halign="right" transparent="1" >
       <convert type="MetrixNextEvents">PrimeTime,onlyDuration</convert>
     </widget>
 <!-- /*Buttons-->
@@ -67,8 +67,8 @@
       <convert type="ClockToText">Format:%A</convert>
     </widget>
     <!--ClockWidget */-->
-    <ePixmap position="401,41" zPosition="-10" size="825,403" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
+    <ePixmap position="401,31" zPosition="-10" size="825,416" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
     <ePixmap position="401,450" zPosition="-10" size="825,240" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
-	<widget source="ServiceEvent" render="XPiconChannel" position="112,50" size="220,132" zPosition="2" transparent="1" alphatest="blend" />
-</screen>
-<!-- ChannelSelection New *--> 
+	<widget source="ServiceEvent" render="XPiconChannel" position="112,44" size="220,132" zPosition="2" transparent="1" alphatest="blend" />
+ </screen>
+<!-- ChannelSelection New *-->

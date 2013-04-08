@@ -109,12 +109,6 @@
     <widget name="nds" position="403,14" size="45, 25" font="SetrixHD;16" text="NDS" valign="center" halign="center" zPosition="3" transparent="1" foregroundColor="metrixForeground" />
     <widget name="ecmInfo" position="18,44" size="560,25" font="SetrixHD;16" valign="center" noWrap="1" zPosition="3" halign="center" transparent="1" foregroundColor="metrixForeground" />
   </screen>
-  <screen name="Volume" position="49,40" size="320,70" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="Volume" position="70,32" size="170,5" zPosition="3" pixmap="MetrixHD/volume.png" transparent="1" />
-    <ePixmap position="0,0" size="320,70" zPosition="-11" pixmap="MetrixHD/icons/sound/volume.png" transparent="0" alphatest="off" />
-    <widget font="SetrixHD;50" foregroundColor="metrixForeground" backgroundColor="metrixBackground" halign="left" valign="center" render="MetrixVolumeText" source="global.CurrentTime" position="250,0" size="110,60" zPosition="20" transparent="1" />
-    <eLabel position="70,34" size="170,1" backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" />
-  </screen>
   <screen name="UnhandledKey" position="49,40" size="70,70" title="UnhandledKey" zPosition="100" flags="wfNoBorder" backgroundColor="transparent">
     <widget alphatest="off" name="UnhandledKeyPixmap" pixmap="MetrixHD/icons/error.png" position="0,0" size="70,70" />
   </screen>
@@ -1552,12 +1546,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <screen name="NumberZapExt" position="center,center" size="700,165" title="Channel" flags="wfNoBorder">
 	<eLabel position="1,1" zPosition="-1" size="700,164" backgroundColor="metrixBackground" />
 	<widget name="chPicon" position="463,17" size="220,132" alphatest="blend" transparent="1" />
-	<widget name="number" position="24,11" size="122,37" halign="left" font="Regular; 28" transparent="1" />
-	<widget name="chNum" position="146,11" size="240,37" halign="left" font="Regular; 28" transparent="1" />
-	<widget name="channel" position="24,61" size="122,36" halign="left" font="Regular; 28" transparent="1" />
-	<widget name="chName" position="146,61" size="308,36" halign="left" font="Regular; 28" noWrap="1" transparent="1" />
-	<widget name="bouquet" position="24,110" size="122,36" halign="left" font="Regular; 28" transparent="1" />
-	<widget name="chBouq" position="146,110" size="308,36" halign="left" font="Regular; 28" noWrap="1" transparent="1" />
+	<widget name="number" position="24,11" size="122,37" halign="left" font="Regular; 26" transparent="1" />
+	<widget name="chNum" position="146,11" size="240,37" halign="left" font="Regular; 26" transparent="1" />
+	<widget name="channel" position="24,61" size="122,36" halign="left" font="Regular; 26" transparent="1" />
+	<widget name="chName" position="146,61" size="308,36" halign="left" font="Regular; 26" noWrap="1" transparent="1" />
+	<widget name="bouquet" position="24,110" size="122,36" halign="left" font="Regular; 26" transparent="1" />
+	<widget name="chBouq" position="146,110" size="308,36" halign="left" font="Regular; 26" noWrap="1" transparent="1" />
 	<eLabel position="458,1" size="1,163" backgroundColor="metrixBackground" />
   </screen>
   <screen name="NumberZap" position="center,center" size="275,60" title="QuickZap" flags="wfNoBorder" backgroundColor="metrixBackground">
