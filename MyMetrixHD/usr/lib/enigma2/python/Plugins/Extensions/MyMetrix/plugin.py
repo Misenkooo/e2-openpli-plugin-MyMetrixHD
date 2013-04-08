@@ -135,10 +135,10 @@ config.plugins.MyMetrix.ScalePicons = ConfigSelection(default="scale-picons-no",
 				("scale-picons-yes", _("Yes")),
 				("scale-picons-no", _("No"))
 				])
-config.plugins.MyMetrix.InfobarProgressbarStyle = ConfigSelection(default="infobar-classic", choices = [
-				("infobar-classic", _("On")),
-				("infobar-colored", _("Off"))
-				])
+config.plugins.MyMetrix.VolumeStyle = ConfigSelection(default="volume-classic", choices = [
+				("volume-classic", _("Classic")),
+				("volume-new", _("New"))
+				])				
 				
 				#InfoBar
 config.plugins.MyMetrix.InfobarWeatherWidget = ConfigSelection(default="infobar-weatherwidget-none", choices = [
@@ -298,12 +298,13 @@ class MyMetrix(ConfigListScreen, Screen):
 		list = []
 		list.append(getConfigListEntry(_("MetrixColor"), config.plugins.MyMetrix.SkinColor))
 		list.append(getConfigListEntry(_("MetrixUpdater"), config.plugins.MyMetrix.AutoUpdate))
-		list.append(getConfigListEntry(_("EMC Style"), config.plugins.MyMetrix.EMCStyle))
-		list.append(getConfigListEntry(_("Merlin Music Player Style"), config.plugins.MyMetrix.MerlinMusicPlayerStyle))
-		list.append(getConfigListEntry(_("WebradioFS Style"), config.plugins.MyMetrix.WebradioFSStyle))
+		list.append(getConfigListEntry(_("Scale Picons"), config.plugins.MyMetrix.ScalePicons))
+		list.append(getConfigListEntry(_("Volume Style"), config.plugins.MyMetrix.VolumeStyle))
 		list.append(getConfigListEntry(_("EPG Style"), config.plugins.MyMetrix.EPGStyle))
 		list.append(getConfigListEntry(_("Channel Selection Style"), config.plugins.MyMetrix.ChannelSelectionStyle))
-		list.append(getConfigListEntry(_("Scale Picons"), config.plugins.MyMetrix.ScalePicons))
+		list.append(getConfigListEntry(_("Merlin Music Player Style"), config.plugins.MyMetrix.MerlinMusicPlayerStyle))
+		list.append(getConfigListEntry(_("WebradioFS Style"), config.plugins.MyMetrix.WebradioFSStyle))
+		list.append(getConfigListEntry(_("EMC Style"), config.plugins.MyMetrix.EMCStyle))
 		list.append(getConfigListEntry(_("----------------------------- MetrixWeather  --------------------------------"), ))
 		list.append(getConfigListEntry(_("MetrixWeather ID"), config.plugins.MetrixWeather.woeid))
 		list.append(getConfigListEntry(_("Unit"), config.plugins.MetrixWeather.tempUnit))
@@ -463,6 +464,8 @@ class MyMetrix(ConfigListScreen, Screen):
 			#Footer
 			self.appendSkinFile(self.daten + "screen-footer.xml")
 			
+			#VOLUMESTYLE
+			self.appendSkinFile(self.daten + config.plugins.MyMetrix.VolumeStyle.value +".xml")
 			#EMCSTYLE
 			self.appendSkinFile(self.daten + config.plugins.MyMetrix.EMCStyle.value +".xml")
 			#MERLINMUSICPLAYERSTYLE
