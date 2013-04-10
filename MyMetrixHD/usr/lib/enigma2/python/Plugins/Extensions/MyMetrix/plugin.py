@@ -276,7 +276,7 @@ class MyMetrix(ConfigListScreen, Screen):
 
 	def __init__(self, session, args = None, picPath = None):
 		self.version = "v1.1b"
-		self["metrixVersion"] = Label(_(self.version + " (Rev." + str(config.plugins.MetrixUpdater.Revision.value) + ") by iMaxxx. OpenPLI mod by IPMAN & Misenko. v1.4"))
+		self["metrixVersion"] = Label(_(self.version + " (Rev." + str(config.plugins.MetrixUpdater.Revision.value) + ") by iMaxxx. OpenPLI mod by IPMAN & Misenko. v1.5"))
 		self["metrixUpdate"] = Label(_(" "))
 		if config.plugins.MetrixUpdater.UpdateAvailable.value == 1:
 			self["metrixUpdate"] = Label(_("Update available, save to apply!"))
