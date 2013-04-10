@@ -15,10 +15,10 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget name="list" position="70,160" size="700,450" zPosition="3" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="metrixBackground" transparent="1" />
-    <widget source="Event" render="Label" position="795,160" size="430,464" font="SetrixHD; 24" backgroundColor="metrixBackground2" transparent="1" valign="top">
+    <widget source="Event" render="Label" position="795,160" size="430,452" font="SetrixHD; 24" backgroundColor="metrixBackground2" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-	<widget source="Event" alphatest="blend" position="380,24" render="XPicon" size="220,132" transparent="1" zPosition="5">
+	<widget source="Event" alphatest="blend" position="center,24" render="XPicon" size="220,132" transparent="1" zPosition="5">
       <convert type="MetrixRefString">CurrentRef</convert>
     </widget>
 	<ePixmap pixmap="MetrixHD/buttons/key_red.png" position="70,635" size="30,40" alphatest="blend" />
@@ -51,11 +51,11 @@
     <widget name="next_text" position="220,117" size="150,30" zPosition="3" text="NEXT" font="SetrixHD; 25" halign="center" backgroundColor="metrixBackground" transparent="1" />
     <widget name="more_text" position="370,117" size="150,30" zPosition="3" text="MORE" font="SetrixHD; 25" halign="center" backgroundColor="metrixBackground" transparent="1" />
     <widget name="date" position="520,115" size="250,30" font="SetrixHD;20" valign="center" halign="right" transparent="1" />
-    <widget name="list" position="70,166" size="700,450" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="metrixBackground" transparent="1" />
-    <widget source="Event" render="Label" position="795,166" size="430,460" font="SetrixHD; 24" backgroundColor="metrixBackground2" transparent="1" valign="top">
+    <widget name="list" position="70,160" size="700,450" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="metrixBackground" transparent="1" />
+    <widget source="Event" render="Label" position="795,160" size="430,452" font="SetrixHD; 24" backgroundColor="metrixBackground2" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <ePixmap pixmap="MetrixHD/buttons/key_red.png" position="70,635" size="30,40" alphatest="blend" />
+	<ePixmap pixmap="MetrixHD/buttons/key_red.png" position="70,635" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_green.png" position="252,635" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_yellow.png" position="440,635" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_blue.png" position="630,635" size="30,40" alphatest="blend" />
@@ -65,4 +65,4 @@
     <widget name="key_blue" position="665,637" size="160,25" zPosition="1" font="SetrixHD;22" halign="left" backgroundColor="metrixBackground" transparent="1" />
     <ePixmap position="1140,635" size="81,40" zPosition="10" pixmap="MetrixHD/buttons/key_menu.png" transparent="1" alphatest="blend" />
   </screen>
-  <!-- / EPGSelection Classic * -->
+<!-- / EPGSelection Classic * -->
