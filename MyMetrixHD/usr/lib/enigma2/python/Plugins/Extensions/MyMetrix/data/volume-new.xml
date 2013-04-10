@@ -1,7 +1,7 @@
 <!--* Volume New -->
-  <screen name="Volume" position="0,0" size="1280,70" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap position="0, 0" zPosition="0" size="1280, 70" pixmap="MetrixHD/volume/vol_back.png" />
-    <widget name="Volume" position="284, 26" zPosition="1" size="710,20" pixmap="MetrixHD/volume/vol.png" transparent="1" />
-    <widget font="Regular;50" foregroundColor="metrixForeground" backgroundColor="metrixBackground" halign="left" valign="center" render="MetrixVolumeText" source="global.CurrentTime" position="1030,0" size="110,60" zPosition="20" transparent="1" />
+  <screen name="Volume" position="0,0" size="1280,70" zPosition="3" title="Volume" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap position="0, 0" zPosition="2" size="1280, 70" pixmap="MetrixHD/volume/vol_back.png" />
+    <widget name="Volume" position="284, 26" zPosition="4" size="710,20" pixmap="MetrixHD/volume/vol.png" transparent="1" />
+    <widget font="Regular;50" foregroundColor="metrixForeground" backgroundColor="metrixBackground" halign="left" valign="center" render="MetrixVolumeText" source="global.CurrentTime" position="1030,0" size="110,60" zPosition="4" transparent="1" />
   </screen>
 <!-- Volume New *-->
