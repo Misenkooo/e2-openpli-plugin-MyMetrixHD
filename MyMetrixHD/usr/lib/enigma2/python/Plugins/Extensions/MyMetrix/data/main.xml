@@ -945,36 +945,35 @@
     <!--ClockWidget */-->
     <eLabel position="62,260" size="315,1" backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" />
   </screen>
-   <screen name="GraphMultiEPG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap position="41,22" zPosition="-10" size="1205,652" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
-    <widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="metrixBackground2" transparent="1">
+  <screen name="GraphMultiEPG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap position="41,22" zPosition="-10" size="1205,655" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
+    <widget source="global.CurrentTime" render="Label" position="1103,22" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="metrixBackground2" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" backgroundColor="metrixBackground2" transparent="1" foregroundColor="metrixAccent1">
+    <widget source="global.CurrentTime" render="Label" position="931,34" size="161,27" font="Regular; 15" halign="right" backgroundColor="metrixBackground2" transparent="1" foregroundColor="metrixAccent1">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="931,64" size="161,29" font="Regular; 16" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="931,58" size="161,29" font="Regular; 16" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1">
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
-    <eLabel text="Electronic Program Guide" position="70,37" size="800,50" font="SetrixHD;35" backgroundColor="metrixBackground2" transparent="1" />
-    <widget source="Event" render="Label" position="70,90" size="700,39" font="SetrixHD; 30" backgroundColor="metrixBackground2" transparent="1">
+    <widget source="Event" render="Label" position="70,42" size="800,49" font="SetrixHD; 32" backgroundColor="metrixBackground2" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="70,136" size=" 65, 22" font="Regular; 18" halign="right" backgroundColor="metrixBackground2" transparent="1">
+    <widget source="Event" render="Label" position="70,88" size=" 65, 22" font="Regular; 20" halign="right" backgroundColor="metrixBackground2" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M </convert>
     </widget>
-    <widget source="Event" render="Label" position="1142,136" size=" 80, 22" font="Regular; 18" backgroundColor="metrixBackground2" transparent="1">
+    <widget source="Event" render="Label" position="1142,88" size=" 80, 22" font="Regular; 20" backgroundColor="metrixBackground2" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="Event" render="Progress" position="146,143" size="990,5" borderWidth="0" backgroundColor="metrixForeground" transparent="1">
+    <widget source="Event" render="Progress" position="146,100" size="990,5" borderWidth="0" backgroundColor="metrixForeground" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="Event" render="Label" position="70,163" size="1153,110" font="Regular; 19" backgroundColor="metrixBackground2" transparent="1" valign="top">
+    <widget source="Event" render="Label" position="70,115" size="1153,166" font="Regular; 20" backgroundColor="metrixBackground2" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <eLabel position="146,145" size="990,1" backgroundColor="metrixAccent1" />
+    <eLabel position="146,102" size="990,1" backgroundColor="metrixAccent1" />
     <widget name="timeline_text" position="70,290" size="1160,25" selectionDisabled="1" backgroundColor="metrixBackground" transparent="1" />
     <eLabel position="70,320" size="1160,2" backgroundColor="metrixAccent1" />
     <widget name="list" position="70,330" size="1160,295" itemHeight="60" EntryBorderColor="metrixForeground" EntryBackgroundColor="metrixBackground" EntryBackgroundColorSelected="metrixAccent1" scrollbarMode="showOnDemand" transparent="1" />
