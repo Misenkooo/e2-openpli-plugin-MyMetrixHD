@@ -2060,15 +2060,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel text="Timer Editor" position="70,47" size="800,53" font="SetrixHD;35" backgroundColor="metrixBackground2" transparent="1" />
-    <widget name="timerlist" position="70,115" size="700,500" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="timerlist" position="70,115" size="700,500" itemHeight="60" scrollbarMode="showOnDemand" transparent="1" />
     <ePixmap pixmap="MetrixHD/buttons/red.png" position=" 70,635" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/green.png" position="360,635" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/yellow.png" position="650,635" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/blue.png" position="940,635" size="30,40" alphatest="blend" />
-    <widget name="key_red" position="105,637" size="240,24" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
-    <widget name="key_green" position="395,637" size="240,24" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
-    <widget name="key_yellow" position="685,637" size="240,24" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
-    <widget name="key_blue" position="975,637" size="240,24" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_red" position="105,637" size="240,34" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_green" position="395,637" size="240,34" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_yellow" position="685,637" size="240,34" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="key_blue" position="975,637" size="240,34" zPosition="1" font="SetrixHD;20" halign="left" backgroundColor="metrixBackground" transparent="1" />
     <ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD/icons/timer.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="TimerEntry" position="0,0" size="1280,720" title="Timer entry" flags="wfNoBorder" backgroundColor="transparent">
