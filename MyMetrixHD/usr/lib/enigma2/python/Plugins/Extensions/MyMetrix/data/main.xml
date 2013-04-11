@@ -974,7 +974,7 @@
     <widget name="timeline_text" position="70,290" size="1160,25" selectionDisabled="1" backgroundColor="metrixBackground" transparent="1" />
     <eLabel position="70,320" size="1160,2" backgroundColor="metrixAccent1" />
     <widget name="list" position="70,330" size="1160,295" itemHeight="60" EntryBorderColor="metrixForeground" EntryBackgroundColor="metrixBackground" EntryBackgroundColorSelected="metrixAccent1" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="timeline_now" position="0,330" zPosition="2" size="10,295" pixmap="MetrixHD/timeline-now.png" transparent="1" alphatest="blend" />
+    <widget name="timeline_now" position="0,330" zPosition="2" size="10,295" pixmap="MetrixHD/timeline-now-blzr.png" transparent="1" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_red.png" position="70,637" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_green.png" position="265,637" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_yellow.png" position="460,637" size="30,40" alphatest="blend" />
@@ -1000,7 +1000,7 @@
     <widget name="timeline_text" position="70,90" size="1160,25" selectionDisabled="1" backgroundColor="metrixBackground" transparent="1" />
     <eLabel position="70,120" size="1160,2" backgroundColor="metrixAccent1" />
     <widget name="list" position="70,130" size="1160,495" itemHeight="60" EntryBorderColor="metrixForeground" EntryBackgroundColor="metrixBackground" EntryBackgroundColorSelected="metrixAccent1" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="timeline_now" position="0,130" zPosition="2" size="10,635" pixmap="MetrixHD/timeline-now.png" transparent="1" alphatest="blend" />
+    <widget name="timeline_now" position="0,130" zPosition="2" size="10,635" pixmap="MetrixHD/timeline-now-blzr.png" transparent="1" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_red.png" position="70,637" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_green.png" position="265,637" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/key_yellow.png" position="460,637" size="30,40" alphatest="blend" />
@@ -3463,7 +3463,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<eLabel name="new eLabel" position="138,161" size="1035,1" backgroundColor="white" />
 	
 	<widget name="list" position="25,173" size="1151,420" scrollbarMode="showNever" font="Regular; 26" CoolBorderColR="#30000000" CoolBorderColL="#30000000" CoolNowBackCol="#3e3e3e" CoolTVBackCol="#3e3e3e" CoolBackCol="#2c2c2c" CoolNowBackColSel="metrixSelection" CoolTVBackColSel="metrixSelection" CoolBackColSel="metrixSelection" CoolFontCol="#FFFFFF" CoolFontColSel="#FFFFFF" CoolNowFontCol="#FFFFFF" CoolNowFontColSel="#FFFFFF" CoolBackRecColSel="#a90707" CoolBackRecCol="#a90707" transparent="1" />
-    <widget name="timeline_now" position="25,175" zPosition="2" size="14,415" pixmap="MetrixHD/timeline-now.png" alphatest="on" />
+    <widget name="timeline_now" position="25,175" zPosition="2" size="14,416" pixmap="MetrixHD/timeline-now.png" alphatest="on" />
 	    
     <ePixmap pixmap="MetrixHD/buttons/red.png" position="5,620" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/green.png" position="265,620" size="30,40" alphatest="blend" />
