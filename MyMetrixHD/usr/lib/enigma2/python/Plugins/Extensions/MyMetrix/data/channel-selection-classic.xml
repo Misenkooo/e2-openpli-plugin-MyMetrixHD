@@ -1,9 +1,10 @@
 <!--* ChannelSelection Classic -->
 <screen name="ChannelSelection" position="1,center" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="51,51" zPosition="-10" size="340,525" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" />
-    <eLabel text="Channel Selection" position="10,552" size="1273,296" font="SetrixHD; 150" backgroundColor="metrixPreTrans2" transparent="1" foregroundColor="metrixPreTrans2" valign="top" zPosition="-20" />
+    <widget source="Title" render="Label" position="425,55" size="790,45" font="SetrixHD; 29" backgroundColor="metrixBackground" transparent="1" />
+	<eLabel text="Channel Selection" position="10,552" size="1273,296" font="SetrixHD; 150" backgroundColor="metrixPreTrans2" transparent="1" foregroundColor="metrixPreTrans2" valign="top" zPosition="-20" />
     <eLabel position="117,277" size="206,1" backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" />
-    <widget name="list" position="401,62" size="825,555" scrollbarMode="showNever" foregroundColor="metrixAccent1" foregroundColorSelected="white" colorServiceDescription="white" colorServiceDescriptionSelected="white" colorEventProgressbar="metrixSelection" colorEventProgressbarSelected="metrixForeground" colorEventProgressbarBorder="metrixSelection" colorEventProgressbarBorderSelected="metrixForeground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="39" serviceNumberFont="SetrixHD;31" serviceNameFont="SetrixHD;31"  serviceInfoFont="Regular;24" transparent="1" backgroundColor="metrixBackground" itemHeight="30" />
+    <widget name="list" position="401,106" size="825,514" scrollbarMode="showNever" colorServiceDescription="metrixAccent2" colorServiceDescriptionSelected="metrixForeground" colorEventProgressbarBorder="metrixSelection" colorEventProgressbarBorderSelected="metrixForeground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="32" serviceNumberFont="SetrixHD;28" serviceNameFont="SetrixHD;28" serviceInfoFont="Regular;24" transparent="1" backgroundColor="metrixBackground" itemHeight="50" />
     <widget source="ServiceEvent" render="Label" position="62,185" size="320,80" zPosition="6" font="SetrixHD; 30" backgroundColor="metrixBackground2" transparent="1" halign="left" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
@@ -49,4 +50,4 @@
     <ePixmap position="401,51" zPosition="-10" size="825,619" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
     <widget source="ServiceEvent" render="XPiconChannel" position="112,60" size="220,132" zPosition="2" transparent="1" alphatest="blend" />
   </screen>
-<!-- ChannelSelection Classic *-->  
+<!-- ChannelSelection Classic *-->

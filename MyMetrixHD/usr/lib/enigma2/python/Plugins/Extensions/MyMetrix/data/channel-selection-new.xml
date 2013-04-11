@@ -1,8 +1,9 @@
 <!--* ChannelSelection New -->
  <screen name="ChannelSelection" position="1,center" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="51,31" zPosition="-10" size="340,659" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" />
-    <eLabel position="117,277" size="206,1" backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" />
-   <widget name="list" position="401,42" size="825,398" scrollbarMode="showNever" foregroundColor="metrixAccent1" foregroundColorSelected="white" colorServiceDescription="white" colorServiceDescriptionSelected="white" colorEventProgressbar="metrixSelection" colorEventProgressbarSelected="metrixForeground" colorEventProgressbarBorder="metrixSelection" colorEventProgressbarBorderSelected="metrixForeground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="39" serviceNumberFont="SetrixHD;31" serviceNameFont="SetrixHD;31"  serviceInfoFont="Regular;24" transparent="1" backgroundColor="metrixBackground" itemHeight="30" />
+    <widget source="Title" render="Label" position="425,35" size="790,45" font="SetrixHD; 29" backgroundColor="metrixBackground" transparent="1" />
+	<eLabel position="117,277" size="206,1" backgroundColor="metrixAccent1" foregroundColor="metrixAccent1" />
+   <widget name="list" position="401,80" size="825,360" scrollbarMode="showNever" colorServiceDescription="metrixAccent2" colorServiceDescriptionSelected="metrixForeground" colorEventProgressbarBorder="metrixSelection" colorEventProgressbarBorderSelected="metrixForeground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="32" serviceNumberFont="SetrixHD;28" serviceNameFont="SetrixHD;28" serviceInfoFont="Regular;24" transparent="1" backgroundColor="metrixBackground" itemHeight="50" noWrap="1" />
     <widget source="ServiceEvent" render="Label" position="62,179" size="320,80" zPosition="6" font="SetrixHD; 30" backgroundColor="metrixBackground2" transparent="1" halign="left" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
