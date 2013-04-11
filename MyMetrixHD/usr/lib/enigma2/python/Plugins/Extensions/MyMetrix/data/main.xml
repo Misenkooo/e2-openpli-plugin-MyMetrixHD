@@ -887,9 +887,6 @@
     <widget source="Title" render="XPicon" position="117,64" size="220,132" zPosition="5" transparent="1" alphatest="blend">
        <convert type="MetrixRefString">CurrentRef</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="425,50" size="790,55" font="SetrixHD; 35" halign="left" backgroundColor="metrixBackground2" transparent="1" noWrap="1">
-      <convert type="EventName">Name</convert>
-    </widget>
     <ePixmap position="416,51" zPosition="-10" size="810,619" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
     <eLabel text="Eventview" position="10,552" size="1273,296" font="SetrixHD; 150" backgroundColor="metrixPreTrans2" transparent="1" foregroundColor="metrixPreTrans2" valign="top" zPosition="-20" />
     <widget source="session.CurrentService" render="Pixmap" pixmap="MetrixHD/icons/ico_dolby_on.png" position="117,534" size="64,23" zPosition="2" alphatest="blend">
@@ -919,7 +916,7 @@
 	<widget name="channel" position="62,197" size="320,50" font="SetrixHD; 35" halign="center" backgroundColor="metrixBackground" transparent="1" />
 	<widget name="datetime" position="85,287" size="270,40" font="SetrixHD; 32" halign="center" backgroundColor="metrixBackground" transparent="1" />
     <widget name="duration" position="85,342" size="270,40" font="SetrixHD; 32" halign="center" backgroundColor="metrixBackground" transparent="1" />
-    <widget name="epg_description" position="425,92" size="789,528" font="SetrixHD; 27" backgroundColor="metrixBackground" transparent="1" />
+    <widget name="epg_description" position="425,60" size="789,550" font="Regular; 25" backgroundColor="metrixBackground" transparent="1" />
 	
 	<ePixmap pixmap="MetrixHD/buttons/red.png" position="418,630" size="30,40" alphatest="blend" />
     <ePixmap pixmap="MetrixHD/buttons/green.png" position="618,630" size="30,40" alphatest="blend" />
