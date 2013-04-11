@@ -1373,9 +1373,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <screen name="MovieSelection" position="0,0" size="1280,720" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="51,36" zPosition="-10" size="390,557" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
-    <eLabel text="Select a movie" position="10,562" size="1273,296" font="SetrixHD; 145" backgroundColor="metrixPreTrans2" transparent="1" foregroundColor="metrixPreTrans2" valign="top" zPosition="-20" />
-    <widget name="list" position="453,54" size="780,486" scrollbarMode="showOnDemand" fontName="SetrixHD" itemHeights="99,70,40" fontSizesOriginal="26,20,20" fontSizesCompact="26,20" fontSizesMinimal="25,20" transparent="1" />
-    <widget name="freeDiskSpace" position="453,584" size="700,35" font="SetrixHD;25" valign="center" backgroundColor="metrixBackground" transparent="1" />
+    <widget source="Title" render="Label" position="460,40" size="760,45" font="SetrixHD; 29" backgroundColor="metrixBackground" transparent="1" />
+	<eLabel text="Select a movie" position="10,562" size="1273,296" font="SetrixHD; 145" backgroundColor="metrixPreTrans2" transparent="1" foregroundColor="metrixPreTrans2" valign="top" zPosition="-20" />
+    <widget name="list" position="453,85" size="780,495" scrollbarMode="showOnDemand" fontName="SetrixHD" itemHeights="99,70,40" fontSizesOriginal="26,20,20" fontSizesCompact="26,20" fontSizesMinimal="25,20" transparent="1" />
+    <widget name="freeDiskSpace" position="460,584" size="700,35" font="SetrixHD;25" valign="center" backgroundColor="metrixBackground" transparent="1" />
     <widget source="Service" render="XPicon" position="139,43" zPosition="4" size="220,132" transparent="1" alphatest="blend">
       <convert type="MetrixMovieInfo">RecordServiceName</convert>
     </widget>
