@@ -117,7 +117,8 @@ config.plugins.MyMetrix.EMCStyle = ConfigSelection(default="emc-classic", choice
 				])
 config.plugins.MyMetrix.MerlinMusicPlayerStyle = ConfigSelection(default="merlin_music_player_classic", choices = [
 				("merlin_music_player_classic", _("Classic")),
-				("merlin_music_player_new", _("New"))
+				("merlin_music_player_new", _("New")),
+				("merlin_music_player_style", _("Style"))
 				])					
 config.plugins.MyMetrix.WebradioFSStyle = ConfigSelection(default="webradioFS-classic", choices = [
 				("webradioFS-classic", _("Classic")),
