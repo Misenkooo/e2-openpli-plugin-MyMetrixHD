@@ -1296,6 +1296,23 @@ newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		</applet>
   </screen>
+  <screen name="MovieBrowserConfiguration" position="0,0" size="1280,720" title="Movie Browser Configuration" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap position="40,25" zPosition="-10" size="1205,650" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
+    <widget source="global.CurrentTime" render="Label" position="1103,28" size="140,60" font="SetrixHD; 50" halign="left" backgroundColor="metrixBackground2" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,37" size="161,27" font="Regular; 15" halign="right" backgroundColor="metrixBackground2" transparent="1" foregroundColor="metrixAccent1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="931,64" size="161,29" font="Regular; 16" halign="right" backgroundColor="metrixBackground2" foregroundColor="metrixAccent1" transparent="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel text="Movie List Configuration" position="70,47" size="800,53" font="SetrixHD;35" backgroundColor="metrixBackground2" transparent="1" />
+    <widget name="config" position="70,115" size="700,500" itemHeight="26" scrollbarMode="showOnDemand" transparent="1" />
+    <ePixmap position="920,230" size="256,256" zPosition="2" pixmap="MetrixHD/icons/setup.png" transparent="1" alphatest="blend" />
+	<ePixmap pixmap="MetrixHD/buttons/green.png" position="55,630" size="30,40" alphatest="blend" />
+    <widget name="key_green" position="93,633" size="130,28" zPosition="1" font="SetrixHD; 22" halign="left" backgroundColor="metrixBackground" transparent="1" />
+  </screen>
   <screen name="MovieContextMenu" position="880,0" size="400,723" title="Movielist menu" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap position="0,0" zPosition="-10" size="400,723" pixmap="MetrixHD/menu/back1.png" name="#" />
     <eLabel text="Select a movie" position="12,44" size="800,43" font="SetrixHD;35" backgroundColor="metrixBackground2" transparent="1" />
