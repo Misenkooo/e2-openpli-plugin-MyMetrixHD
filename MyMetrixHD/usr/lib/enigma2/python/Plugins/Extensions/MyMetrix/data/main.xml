@@ -1232,7 +1232,7 @@
     <ePixmap pixmap="MetrixHD/buttons/green.png" position="360,635" size="30,40" alphatest="blend" />
     <eLabel text="Cancel" position="105,637" size="250,28" font="Regular; 20" halign="left" valign="top" transparent="1" />
     <eLabel text="Save" position="395,637" size="250,28" font="Regular; 20" halign="left" valign="top" transparent="1" />
-    <ePixmap position="870,390" size="128,128" zPosition="2" pixmap="MetrixHD/icons/setup.png" transparent="1" alphatest="blend" />
+    <ePixmap position="870,390" size="256,256" zPosition="2" pixmap="MetrixHD/icons/setup.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="MediaPlayerSettings" position="0,0" size="1280,720" title="Edit Settings" flags="wfNoBorder" backgroundColor="transparent">
    <ePixmap position="40,25" zPosition="-10" size="1205,650" pixmap="MetrixHD/back.png" borderWidth="1" borderColor="metrixDeepGrey" transparent="0" />
