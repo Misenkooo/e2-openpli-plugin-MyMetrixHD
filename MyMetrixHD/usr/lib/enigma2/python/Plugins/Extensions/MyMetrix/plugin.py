@@ -130,7 +130,9 @@ config.plugins.MyMetrix.EPGStyle = ConfigSelection(default="epg-selection-classi
 				])
 config.plugins.MyMetrix.ChannelSelectionStyle = ConfigSelection(default="channel-selection-classic", choices = [
 				("channel-selection-classic", _("Classic")),
-				("channel-selection-new", _("New"))
+				("channel-selection-classic-big", _("Classic Big Size")),
+				("channel-selection-new", _("New")),
+				("channel-selection-new-big", _("Neu Big Size"))
 				])		
 config.plugins.MyMetrix.ScalePicons = ConfigSelection(default="scale-picons-no", choices = [
 				("scale-picons-yes", _("Yes")),
@@ -140,6 +142,14 @@ config.plugins.MyMetrix.VolumeStyle = ConfigSelection(default="volume-classic", 
 				("volume-classic", _("Classic")),
 				("volume-new", _("New"))
 				])				
+config.plugins.MyMetrix.MoviePlayerStyle = ConfigSelection(default="movieplayer-classic", choices = [
+				("movieplayer-classic", _("Classic")),
+				("movieplayer-new", _("New"))
+				])
+config.plugins.MyMetrix.MovieSelectionStyle = ConfigSelection(default="movie-selection-classic", choices = [
+				("movie-selection-classic", _("Classic")),
+				("movie-selection-new", _("New"))
+				])
 				
 				#InfoBar
 config.plugins.MyMetrix.InfobarWeatherWidget = ConfigSelection(default="infobar-weatherwidget-none", choices = [
@@ -303,6 +313,8 @@ class MyMetrix(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Volume Style"), config.plugins.MyMetrix.VolumeStyle))
 		list.append(getConfigListEntry(_("EPG Style"), config.plugins.MyMetrix.EPGStyle))
 		list.append(getConfigListEntry(_("Channel Selection Style"), config.plugins.MyMetrix.ChannelSelectionStyle))
+		list.append(getConfigListEntry(_("Movie Selection Style"), config.plugins.MyMetrix.MovieSelectionStyle))
+		list.append(getConfigListEntry(_("Movie Player Style"), config.plugins.MyMetrix.MoviePlayerStyle))
 		list.append(getConfigListEntry(_("Merlin Music Player Style"), config.plugins.MyMetrix.MerlinMusicPlayerStyle))
 		list.append(getConfigListEntry(_("WebradioFS Style"), config.plugins.MyMetrix.WebradioFSStyle))
 		list.append(getConfigListEntry(_("EMC Style"), config.plugins.MyMetrix.EMCStyle))
@@ -467,6 +479,10 @@ class MyMetrix(ConfigListScreen, Screen):
 			
 			#VOLUMESTYLE
 			self.appendSkinFile(self.daten + config.plugins.MyMetrix.VolumeStyle.value +".xml")
+			#MOVIESELECTIONSTYLE
+			self.appendSkinFile(self.daten + config.plugins.MyMetrix.MovieSelectionStyle.value +".xml")
+			#MOVIEPLAYERSTYLE
+			self.appendSkinFile(self.daten + config.plugins.MyMetrix.MoviePlayerStyle.value +".xml")
 			#EMCSTYLE
 			self.appendSkinFile(self.daten + config.plugins.MyMetrix.EMCStyle.value +".xml")
 			#MERLINMUSICPLAYERSTYLE
