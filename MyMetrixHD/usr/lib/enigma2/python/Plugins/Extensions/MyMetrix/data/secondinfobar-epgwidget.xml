@@ -1,4 +1,4 @@
-<!-- /* EPGWidget -->
+<!-- /* Second Infobar EPGWidget -->
    <widget source="session.Event_Now" render="Label" position="83,133" size="535,38" halign="left" backgroundColor="metrixBackground" transparent="1" zPosition="2" font="Regular; 26" noWrap="1" valign="center">
      <convert type="EventName">Name</convert>
    </widget>
@@ -11,6 +11,6 @@
    <widget source="session.Event_Next" render="Label" position="640,195" size="560,288" font="Regular; 21" zPosition="1" backgroundColor="metrixBackground" transparent="1" halign="left">
      <convert type="EventName">ExtendedDescription</convert>
    </widget>
-   <eLabel name="NowBG" position="65,128" size="565,376" zPosition="-1" backgroundColor="metrixBackground" />
-   <eLabel name="NextBG" position="630,149" size="585,341" backgroundColor="metrixBackground" />
-<!-- EPGWidget */-->
+   <ePixmap pixmap="MetrixHD/back.png" position="65,128" size="565,376" zPosition="-1" borderWidth="1" borderColor="metrixDeepGrey" />
+   <ePixmap pixmap="MetrixHD/back.png" position="630,149" size="585,341" zPosition="-2" borderWidth="1" borderColor="metrixDeepGrey" />
+<!-- Second Infobar EPGWidget */-->
